@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 375px;
+  height: 100vh;
+
+  background-color: lavender;
+  
+}
+
+/*header*/
+#header {
+  background-color: rgb(243, 204, 204);
+}
+
+#menu-btn{
+  background-color: black;
+  color: white;
+}
+
+/*main*/
+#main {
+  border: 1px solid red;
+}
+
+/*headline*/
+#headline {
+  background-color: rgb(186, 226, 186);
+}
