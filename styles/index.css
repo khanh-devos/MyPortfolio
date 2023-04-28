@@ -8,7 +8,6 @@ body {
   width: 100%;
   min-width: 375px;
   height: 100vh;
-  margin-bottom: 100px;
   background-color: lavender;
 }
 
@@ -65,7 +64,6 @@ body {
 #headline {
   height: 590px;
   padding: 120px 24px;
-  padding-bottom: auto;
 }
 #headline h1 {
   color: #FF6B00;
@@ -100,17 +98,37 @@ body {
 
 /* nav */
 #headline-nav {
-  margin: 12px 0px;
+  margin: 0px 0px;
 }
 #headline-nav ul {
   display: flex;
+  margin: 0px 0px;
   flex-direction: row;
 }
 #headline-nav ul li {
   width: 40px;
   height: 40px;
+  background-size: auto 20px;
   list-style-type: none;
-  border: 1px solid red;
+  display: flex;
+}
+#headline-nav ul li a {
+  flex: 1;
+}
+#headline-nav ul li:nth-child(1) {
+  background: url(../imgs/socialIcons/gitIcon.png) center center no-repeat;
+}
+#headline-nav ul li:nth-child(2) {
+  background: url(../imgs/socialIcons/Group.png) center center no-repeat;
+}
+#headline-nav ul li:nth-child(4) {
+  background: url(../imgs/socialIcons/pegon.png) center center no-repeat;
+}
+#headline-nav ul li:nth-child(3) {
+  background: url(../imgs/socialIcons/twofingers.png) center center no-repeat;
+}
+#headline-nav ul li:nth-child(5) {
+  background: url(../imgs/socialIcons/M.png) center center no-repeat;
 }
 
 /* DESKTOP */
