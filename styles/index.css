@@ -59,7 +59,6 @@ body {
   background-position: top right;
   background-position-x: 145%;
   background-position-y: 280px;
-
   height: 590px;
   padding: 120px 24px;
 }
@@ -87,7 +86,7 @@ body {
 }
 
 #headline p {
-  color: #ffffff;
+  color: #fff;
   margin: 12px 0;
   font-family: Poppins, fantasy;
   font-size: 16px;
@@ -149,16 +148,13 @@ body {
   #header-nav {
     display: block;
   }
-  
   #header-nav ul {
     display: flex;
   }
-
   #header-nav ul li {
     list-style-type: none;
     margin: 15px;
   }
-  
   #header-nav ul li a {
     text-decoration: none;
   }
