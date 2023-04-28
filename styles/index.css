@@ -145,14 +145,12 @@ body {
     display: none;
   }
 
-  #header-nav {
-    display: block;
+  #header-nav { 
+    display: block; 
   }
-  
   #header-nav ul {
     display: flex;
   }
-  
   #header-nav ul li {
     list-style-type: none;
     margin: 15px;
