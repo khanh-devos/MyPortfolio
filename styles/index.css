@@ -141,24 +141,16 @@ body {
 
 /* DESKTOP */
 @media screen and (min-width: 768px) {
-  #menu-btn {
-    display: none;
-  }
+  #menu-btn { display: none; }
 
-  #header-nav { 
-    display: block; 
-  }
+  #header-nav { display: block; }
 
-  #header-nav ul {
-    display: flex;
-  }
-  
+  #header-nav ul { display: flex; }
+
   #header-nav ul li {
     list-style-type: none;
     margin: 15px;
   }
 
-  #header-nav ul li a {
-    text-decoration: none;
-  }
+  #header-nav ul li a { text-decoration: none; }
 }
