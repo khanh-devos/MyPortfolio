@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 0px 0px;
-  color: #FFFFFF;
+  padding: 0 0;
+  color: #fff;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 #header h1 {
-  color: #ffffff;
+  color: #fff;
   margin: 8px 0;
   font-family: Roboto, fantasy;
   font-size: 18px;
@@ -59,9 +59,7 @@ body {
   background-position: top right;
   background-position-x: 145%;
   background-position-y: 280px;
-}
 
-#headline {
   height: 590px;
   padding: 120px 24px;
 }
@@ -164,4 +162,4 @@ body {
   #header-nav ul li a {
     text-decoration: none;
   }
-}/*# sourceMappingURL=index.css.map */
+}
