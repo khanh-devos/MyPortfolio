@@ -74,24 +74,23 @@ This project is based on HTML, CSS, Linters
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-none
+In order to run this project you need: internet, VS Code, nodejs, Chrome, GitHub account
 
 ### Setup
+Set up an account at Github.
 Clone this repository to your desired folder:
 
 ### Install
-
-none
+install Chrome, nodejs and VScode
 
 ### Usage
-
-Clone it
+run index.html by Chrome or the extensions Live server of VScode
 
 ### Run tests 
-none
+You can run test with this [manual](https://github.com/microverseinc/linters-config/tree/master/html-css)  
 
 ### Deployment
-none
+You can deploy this project using a Host service
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +112,7 @@ none
 
 - [ ] **[this project will get more specific]**
 - [ ] **[continuously updated]**
-- [ ] **[javascript will be added]**
+- [ ] **[Animation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
