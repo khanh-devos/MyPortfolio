@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   padding: 0 0;
+  margin: 0 0;
   color: #fff;
 }
 
@@ -8,7 +9,7 @@ body {
   width: 100%;
   min-width: 375px;
   height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 /* header */
@@ -51,6 +52,16 @@ body {
   flex-direction: column;
 }
 
+/* set shared properties */
+#main section {
+  padding: 120px 24px;
+}
+
+#main section h1 {
+  margin: 0 0;
+}
+
+
 /* headline */
 #headline {
   /* only for background image */
@@ -60,12 +71,10 @@ body {
   background-position-x: 145%;
   background-position-y: 280px;
   height: 590px;
-  padding: 120px 24px;
 }
 
 #headline h1 {
   color: #ff6b00;
-  margin: 0 0;
   font-family: Crete Round, fantasy;
   font-size: 56px;
   font-weight: 400;
@@ -138,6 +147,186 @@ body {
 #headline-nav ul li:nth-child(5) {
   background: url(../imgs/socialIcons/M.png) center center no-repeat;
 }
+
+/* Works */
+#works-intro {
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+#works-intro h1{
+  font-family: Crete Round, fantasy;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1c1a19;
+}
+
+#works-intro #line {
+  width: 100%;
+  height: 1px;
+  margin: 24px 0px 80px 0px;
+  background-color: #212121;
+}
+
+#works-intro image {
+  height: auto;
+  width: 100%;
+}
+
+#works-intro h2 {
+  margin: 12px 0;
+
+  font-family: Crete Round, fantasy;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #091e42;
+
+}
+
+#works-intro p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #091e42;
+}
+
+.nav-buttons {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-buttons li {
+  height: 40px;
+  width: auto;
+  border: 1px solid #8993a4;
+
+  text-decoration-style: none;
+  margin-right: 12px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-buttons li a {
+  text-decoration: none;
+  padding: 12px 10px;
+  height: 40px;
+  width: auto;
+  
+
+  font-family: Inter, fantasy;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #091e42;
+}
+
+/* general button */
+.btn-type-1 {
+  height: 48px;
+  width: fit-content;
+  padding: 12px 12px;
+
+  font-family: Inter, fantasy;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+
+  color: #fff;
+  background-color: #ff6b00;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.btn-type-1:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+.btn-type-1:active {
+  color: #f4f1f0;
+  background-color: #e05304;
+  border: 1px solid transparent;
+}
+
+.btn-type-1:disabled {
+  background-color: #5b5957;
+  border: 1px solid transparent;
+}
+
+/* clss works-box */
+.works-box {
+  width: 100%;
+  margin-top: 24px;
+  padding: 72px 19px 0px 19px; 
+
+  background: url(../imgs/works-bg.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.works-box h2 {
+  margin-top: 12px;
+  font-family: Crete Round, fantasy;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #fff;  
+}
+
+.works-box p {
+  margin: 12px 0;
+  
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #fff;
+
+}
+
+/* works box nav buttons */
+.box-nav li a {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.box-btn {
+  min-width: calc(100% + 38px);
+  margin: 10px 0 0 -19px  ;
+
+}
+
 
 /* DESKTOP */
 @media screen and (min-width: 768px) {
