@@ -276,6 +276,13 @@ body {
 }
 
 /* clss works-box */
+/* .works-box {
+  display: none;
+}
+.works-box:last-child {
+  display: block;
+} */
+
 .works-box {
   width: 100%;
   margin-top: 24px;
@@ -328,6 +335,113 @@ body {
 
 }
 
+/*ABOUT ME*/
+#about-me {
+  margin-top: -120px;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+}
+
+#resume {
+  padding: 120px 24px 1px 24px;
+  height: auto;
+  background: #1c1a19 url(../imgs/portfolioAbout-bg.jpg) center right no-repeat;
+  background-size: 150% 80%;
+  background-position-x: 130px;
+  background-position-y: 230px;
+
+}
+
+#resume h1 {
+  font-family: Crete Round, fantasy;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+
+  color: #ff6b00;
+}
+
+#resume p {
+  margin: 24px 0;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #F4F5F7;
+}
+
+#line-about {
+  background-color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+  
+  margin-top: 209px;
+}
+
+#lang-skills {
+  background-color: #1c1a19;
+  padding: 136px 0 87px 0; 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#lang-skills li {
+  font-family: Inter, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 12px 0;
+
+}
+
+#lang-skills #lang {
+  list-style-image: url(../imgs//socialIcons/Rectangle-55.png);
+}
+
+#lang-skills #frame {
+  list-style-image: url(../imgs/socialIcons/Rectangle56.png);
+  padding-left: 20px;
+}
+
+#lang-skills #skills {
+  list-style-image: url(../imgs//socialIcons/Rectangle-57.png);
+
+}
+
+/* class l-f-skills */
+.l-f-skills {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.l-f-skills article {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+
+  color: #fff;
+  padding-bottom: 32px;
+}
+
+.l-f-skills article:last-child { padding-bottom: 0; }
+
+#contact {
+  background-color: green;
+  height: 100px;
+}
 
 /* DESKTOP */
 @media screen and (min-width: 768px) {
