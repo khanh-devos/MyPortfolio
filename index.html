@@ -48,7 +48,7 @@
 
     <section id="works">
       <div id="works-intro">
-        <h1>My Recent Works</h1>
+        <h3>My Recent Works</h3>
         
         <div id="line"></div>
 
@@ -155,7 +155,7 @@
 
     <section id="about-me">
       <div id="resume">
-        <h1>About me</h1>
+        <h2>About me</h2>
         <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
 
         <button class="btn-type-1">Get Resume</button>
@@ -163,66 +163,76 @@
 
       </div>
       
-      <ul id="lang-skills">
-        <li id="lang">Language</li>
-        <div class="l-f-skills">
-          <a href="">JavaScript</a>
-          <a href="">Ruby</a>
-          <a href="">HTML</a>
-          <a href="">CSS</a>
-        </div>
+      <ul id="lang-skills"
+      style="display: flex;
+      flex-direction: column;
+      align-items: center;"
+      >
+        <li
+        style="list-style-image: url(./imgs/socialIcons/Rectangle-55.png); list-style-position: inside; padding:0 0;"
+        >Language
+          <ul class="l-f-skills" style="list-style: none;
+          padding: 20px 0;">
 
-        <li id="frame">Frameworks</li>
-        <div class="l-f-skills">
-          <a href="">React.js</a>
-          <a href="">Ruby on Rails</a>
-          <a href="">RSpec</a>
-          <a href="">Capybara</a>
-        </div>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">JavaScript</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">Ruby</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">HTML</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">CSS</li>
 
-        <li id="skills">Skills</li>
-        <div class="l-f-skills">
-          <a href="">Data Management</a>
-          <a href="">Version Control</a>
-          <a href="">CLI</a>
-          <a href="">API Design</a>
-          <a href="">Web Development</a>
-        </div>
+
+          </ul>
+        </li>
+
+        <li style="list-style-image: url(./imgs/socialIcons/Rectangle56.png); list-style-position: outside;
+        padding: 0 0; padding-left: 20px;" 
+        >Frameworks
+          <ul class="l-f-skills" style="list-style: none;
+          padding: 20px 0; 
+          "
+          >
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">React.js</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">Ruby on Rails</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">RSpec</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">Capybara</li>
+
+          </ul>
+        </li>
+
+        <li style="list-style-image: url(./imgs//socialIcons/Rectangle-57.png); list-style-position: inside;
+        padding:0 0;">Skills
+          <ul class="l-f-skills" 
+          style="list-style: none; padding: 20px 0;"
+          >
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">Database Management</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">Verson Control</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">CLI</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">API Design</li>
+            <li style="font-family: Inter, fantasy; font-size: 22px; font-weight: 400;color: #fff; 
+            ">Web Development</li>
+            
+          </ul>
+        </li>
+
       </ul>
 
-      <div id="contact">
-        <p>I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-
-        <form id="form-1" action="">
-          <input type="text" placeholder="Full name">
-          <input type="text" placeholder="Email Address">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Write something..."></textarea>
-          
-          <button id="contact-btn" class="btn-type-1">Get in touch</button>
-        
-        </form>
-
-
-
-        <ul class="social-media">
-          <li><a href="https://github.com/khanh-devos"></a></li>
-          <li><a href="https://www.linkedin.com/in/khanh-than-trong-3b4344246/"></a></li>
-          <li><a href=""></a></li>
-          <li><a href="https://twitter.com/home?lang=en"></a></li>
-          <li><a href="mailto:dreamproperty@gmail.com"></a></li>
-        </ul>
-
-        <div id="line-contact"></div>
-
-
-      </div>
+      
 
     </section>
 
 
   </main>
-
-  
 
 </body>
 </html>

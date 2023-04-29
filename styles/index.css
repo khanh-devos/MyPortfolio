@@ -9,7 +9,7 @@ body {
   width: 100%;
   min-width: 375px;
   height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 /* main */
@@ -28,23 +28,11 @@ body {
 .nav-buttons li {
   height: 40px;
   width: auto;
-  border: 1px solid #8993a4;
-  text-decoration-style: none;
   margin-right: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.l-f-skills a {
-  text-decoration: none;
-  font-family: Inter, fantasy;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  color: #fff;
-  padding-bottom: 32px;
 }
 
 .nav-buttons li a {
@@ -57,6 +45,7 @@ body {
   font-weight: 500;
   text-align: center;
   color: #091e42;
+  border: 1px solid #8993a4;
 }
 
 /* general button */
@@ -95,6 +84,9 @@ body {
 /* class works-box */
 .works-box {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 24px;
   padding: 72px 19px;
   padding-bottom: 0;
@@ -126,13 +118,14 @@ body {
 .l-f-skills {
   width: 100%;
   text-align: center;
-  padding: 32px 0;
+  padding: calc(44px - 16px) 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .box-nav li a {
+  border: none;
   font-family: Inter, fantasy;
   font-size: 15px;
   font-weight: 500;
@@ -142,8 +135,6 @@ body {
 }
 
 .social-media li a { flex: 1; }
-
-.l-f-skills a:last-child { padding-bottom: 0; }
 
 /* works box nav buttons */
 .box-btn {
@@ -263,7 +254,12 @@ body {
 }
 
 /* Works */
-#works { padding: 120px 24px; }
+#works {
+  padding: 120px 24px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
 
 #works-intro {
   display: flex;
@@ -271,7 +267,7 @@ body {
   background-color: transparent;
 }
 
-#works-intro h1 {
+#works-intro h3 {
   font-family: Crete Round, fantasy;
   font-size: 40px;
   font-weight: 400;
@@ -312,16 +308,21 @@ body {
 }
 
 /* ABOUT ME */
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+
 #resume {
   padding: 120px 24px 1px 24px;
   height: auto;
   background: #1c1a19 url(../imgs/portfolioAbout-bg.jpg) center right no-repeat;
-  background-size: 150% 80%;
-  background-position-x: 130px;
-  background-position-y: 230px;
+  background-size: 50% 45%;
+  background-position-x: 100%;
+  background-position-y: 95%;
 }
 
-#resume h1 {
+#resume h2 {
   font-family: Crete Round, fantasy;
   font-size: 72px;
   font-weight: 400;
@@ -354,106 +355,16 @@ body {
   padding-bottom: 87px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #lang-skills li {
-  font-family: Inter, fantasy;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  text-align: left;
-  padding: 12px 0;
-}
-
-#lang-skills #lang {
-  list-style-image: url(../imgs//socialIcons/Rectangle-55.png);
-}
-
-#lang-skills #frame {
-  list-style-image: url(../imgs/socialIcons/Rectangle56.png);
-  padding-left: 20px;
-}
-
-#lang-skills #skills {
-  list-style-image: url(../imgs//socialIcons/Rectangle-57.png);
-}
-
-/* contact */
-#contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#contact p {
-  padding: 69px 24px;
-  padding-bottom: 11px;
-  font-family: Inter, fantasy;
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  color: #172b4d;
-}
-
-#form-1 {
-  border: none;
-  border-bottom: 1px solid #dfe1e6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px 24px;
-  padding-bottom: 90px;
-}
-
-#form-1 *:not(button) {
-  width: 100%;
-  align-items: center;
-  margin-top: 24px;
-}
-
-#form-1 input {
-  padding: 16px 15px;
-  border: none;
-  border-bottom: 1px solid #dbd8d7;
-  background-color: #e5e5e5;
-  font-family: Inter, fantasy;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-}
-
-#form-1 textarea {
-  padding: 12px 12px;
-  border: none;
-  background-color: #fbf8f7;
-  height: 114px;
-}
-
-#contact-btn {
-  margin-top: 24px;
   align-self: center;
-}
-
-#contact .social-media {
-  margin: auto;
-  margin-top: 15px;
-}
-
-#contact .social-media li {
-  background-color: #e5e5e5;
-  background-blend-mode: exclusion;
-}
-
-#line-contact {
-  height: 5px;
-  width: 134px;
-  border-radius: 10px;
-  background-color: #0d151e;
-  margin: 53px auto;
-  padding-bottom: 11px;
+  font-family: Inter, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 16px 0;
 }
 
 /* DESKTOP */
