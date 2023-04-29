@@ -116,12 +116,16 @@ body {
 
 /* class l-f-skills */
 .l-f-skills {
-  width: 100%;
-  text-align: center;
-  padding: calc(44px - 16px) 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
+}
+
+.l-f-skills li {
+  font-family: Inter, fantasy;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  padding: 32px 0;
+  padding-bottom: 0;
 }
 
 .box-nav li a {
@@ -359,12 +363,38 @@ body {
   text-align: center;
 }
 
-#lang-skills li {
+#lang-skills #lang {
   align-self: center;
   font-family: Inter, fantasy;
   font-size: 32px;
   font-weight: 700;
-  padding: 16px 0;
+  list-style-image: url(../imgs/socialIcons/Rectangle-55.png);
+  list-style-position: inside;
+  padding: 0 0;
+  padding-bottom: 10px;
+}
+
+#lang-skills #frame {
+  align-self: center;
+  font-family: Inter, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  list-style-image: url(../imgs/socialIcons/Rectangle56.png);
+  list-style-position: outside;
+  padding: 20px 0;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+#lang-skills #skill {
+  align-self: center;
+  font-family: Inter, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  list-style-image: url(../imgs//socialIcons/Rectangle-57.png);
+  list-style-position: inside;
+  padding: 20px 0;
+  padding-bottom: 10px;
 }
 
 /* DESKTOP */
