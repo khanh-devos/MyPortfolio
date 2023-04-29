@@ -19,11 +19,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  height: 92px;
+  height: 48px;
   padding: 4px 24px;
 }
 
-#header h1 {
+#header a {
   color: #fff;
   margin: 8px 0;
   font-family: Roboto, fantasy;
@@ -32,6 +32,7 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
+  text-decoration: none;
 }
 
 #header-nav {
@@ -66,10 +67,10 @@ body {
 #headline {
   /* only for background image */
   background: #1c1a19 url(../imgs/headline-bgImg.jpg) no-repeat;
-  background-size: 50% 60%;
+  background-size: 50% 50%;
   background-position: top right;
-  background-position-x: 145%;
-  background-position-y: 280px;
+  background-position-x: 148%;
+  background-position-y: 320px;
   height: 590px;
 }
 
