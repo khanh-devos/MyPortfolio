@@ -400,7 +400,7 @@ body {
 #contact {
   width: 100%;
   padding: 70px 23px;
-  padding-bottom: 11px;
+  padding-bottom: 53px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,14 +481,6 @@ body {
 
 #contact-social-media li:nth-child(5) {
   background: url(../imgs/socialIcons/M-2.png) center center no-repeat;
-}
-
-#contact-line {
-  margin-top: 37px;
-  background: #0d151e;
-  height: 5px;
-  width: 134px;
-  border-radius: 10px;
 }
 
 /* DESKTOP */
