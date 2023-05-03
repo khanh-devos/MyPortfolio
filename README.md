@@ -97,35 +97,25 @@ You can deploy this project using a Host service
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-
- # 👥 Authors
  
- # 👤 Author1
+# 👤 Author1
 
-### Than Trong Khanh
-### GitHub: https://github.com/khanh-devos/
+👤 **Than Trong Khanh**
 
-### GitHub: [khanh-devos](https://github.com/khanh-devos)
-### Twitter: [@khanhror](https://twitter.com/home?lang=en)
-### LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
+- GitHub: [khanh-devos](https://github.com/khanh-devos)
+- Twitter: [@khanhror](https://twitter.com/home?lang=en)
+- LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
 
 # 👤 Author2
-### Adesina Abiodun Paul
+👤 **Adesina Abiodun Paul**
 
-### GitHub: https://github.com/adesina-abiodun
-
-### LinkedIn: https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143
-
-### Twitter: https://twitter.com/adesinaabiodunp
-
-
- 
+- GitHub: https://github.com/adesina-abiodun
+- LinkedIn: https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143
+- Twitter: https://twitter.com/adesinaabiodunp
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[this project will get more specific]**
