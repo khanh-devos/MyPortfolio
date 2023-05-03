@@ -98,11 +98,29 @@ You can deploy this project using a Host service
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Than Trong Khanh**
 
-- GitHub: [khanh-devos](https://github.com/khanh-devos)
-- Twitter: [@khanhror](https://twitter.com/home?lang=en)
-- LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
+ # 👥 Authors
+ 
+ # 👤 Author1
+
+### Than Trong Khanh
+### GitHub: https://github.com/khanh-devos/
+
+### GitHub: [khanh-devos](https://github.com/khanh-devos)
+### Twitter: [@khanhror](https://twitter.com/home?lang=en)
+### LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
+
+# 👤 Author2
+### Adesina Abiodun Paul
+
+### GitHub: https://github.com/adesina-abiodun
+
+### LinkedIn: https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143
+
+### Twitter: https://twitter.com/adesinaabiodunp
+
+
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

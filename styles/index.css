@@ -383,7 +383,7 @@ body {
   list-style-position: outside;
   padding: 20px 0;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 #lang-skills #skill {
@@ -395,6 +395,92 @@ body {
   list-style-position: inside;
   padding: 20px 0;
   padding-bottom: 10px;
+}
+
+#contact {
+  width: 100%;
+  padding: 70px 23px;
+  padding-bottom: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 78px;
+}
+
+#contact form button {
+  align-self: center;
+}
+
+#form-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-ul li {
+  width: 100%;
+  text-align: center;
+}
+
+#form-ul li:nth-child(1) {
+  font-family: Inter, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 60px;
+}
+
+#form-ul li input:not(.btn-type-1),
+#form-ul li textarea {
+  width: 100%;
+  margin-bottom: 24px;
+  font-family: Inter, fantasy;
+  font-size: 15px;
+  padding: 15px 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #979493;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+#form-ul li textarea {
+  border: none;
+  font-family: Inter, fantasy;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #3c3a39;
+}
+
+#contact-social-media li:nth-child(1) {
+  background: url(../imgs/socialIcons/gitIcon-2.png) center center no-repeat;
+}
+
+#contact-social-media li:nth-child(2) {
+  background: url(../imgs/socialIcons/Group-2.png) center center no-repeat;
+}
+
+#contact-social-media li:nth-child(4) {
+  background: url(../imgs/socialIcons/pigeon-2.png) center center no-repeat;
+}
+
+#contact-social-media li:nth-child(3) {
+  background: url(../imgs/socialIcons/twofingers-2.png) center center no-repeat;
+}
+
+#contact-social-media li:nth-child(5) {
+  background: url(../imgs/socialIcons/M-2.png) center center no-repeat;
 }
 
 /* DESKTOP */
