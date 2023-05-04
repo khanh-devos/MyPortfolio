@@ -45,7 +45,7 @@
 #headline {
   position: relative;
   height: 870px;
-  padding: 0 731px;
+  padding: 0 calc(100% * 731/1440);
   padding-left: 141px;
   display: flex;
   flex-direction: row;
@@ -229,6 +229,7 @@
   justify-content: space-between;
   align-content: center;
   text-align: left;
+  background: none;
 }
 
 #lang-skills #frame,
@@ -244,3 +245,53 @@
 
 #selenium { display: block; }
 
+/* contact */
+#contact {
+  padding: 0 140px;
+  height: 686px;
+}
+form {
+  height: 614px;
+  display: grid;
+  grid-template-columns: 42% 55%;
+  gap: 24px;
+  align-content: center;
+}
+
+form h3 { 
+  text-align: left; 
+  font-size: 40px;
+  line-height: 52px;
+}
+
+form h3 br { display: none; }
+
+#li-full-name {
+  display: none;
+}
+
+#form-ul li { width: unset; flex: 1; }
+
+#form-ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#li-first-name,
+#li-last-name {
+  display: block;
+  min-width: 45%;
+}
+
+#li-email,
+#li-text,
+#li-btn { 
+  min-width: 100%; 
+}
+
+#li-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

@@ -309,21 +309,34 @@
 
     <section id="contact">
       <form action="https://formspree.io/f/mqkonqbq" method="POST">
+        <h3>I'm always <br>interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+
         <ul id="form-ul">
-          <li>I'm always <br>interested in hearing about new projects, so if you'd like to chat please get in touch.</li>
-          <li>
+          <li id="li-full-name">
             <input placeholder="Fullname" name="fullname" 
             type="text" maxlength="30" required>
           </li>
-          <li>
+
+          <li id="li-first-name">
+            <input
+            placeholder="First-name" name="first-name" 
+            type="text" maxlength="30" required>
+          </li>
+
+          <li id="li-last-name">
+            <input  placeholder="Last-name" name="last-name" 
+            type="text" maxlength="30" required>
+          </li>
+
+          <li id="li-email">
             <input placeholder="Email address" name="email"
             type="email" required>
           </li>
-          <li>
+          <li id="li-text">
             <textarea placeholder="Write me something..." 
             name="message" id="" cols="30" rows="5" maxlength="500" required></textarea>
           </li>
-          <li>
+          <li id="li-btn">
             <input type="submit" 
             class="btn-type-1" value="Get in touch">
           </li>

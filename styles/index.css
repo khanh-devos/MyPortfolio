@@ -431,18 +431,18 @@ body {
   justify-content: center;
 }
 
-#form-ul li {
-  width: 100%;
-  text-align: center;
-}
-
-#form-ul li:nth-child(1) {
+form h3 {
   font-family: Inter, fantasy;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
   color: #172b4d;
   margin-bottom: 60px;
+}
+
+#form-ul li {
+  width: 100%;
+  text-align: center;
 }
 
 #form-ul li input:not(.btn-type-1),
@@ -469,6 +469,11 @@ body {
   line-height: 24px;
   text-align: left;
   color: #3c3a39;
+}
+
+#li-first-name,
+#li-last-name {
+  display: none;
 }
 
 #contact-social-media li:nth-child(1) {
