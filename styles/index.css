@@ -16,7 +16,6 @@ body {
 #main {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 /* CLASS TAKE PRECEDE */
@@ -431,7 +430,7 @@ body {
   justify-content: center;
 }
 
-form h3 {
+#contact form h5 {
   font-family: Inter, fantasy;
   font-size: 32px;
   font-weight: 700;
@@ -495,4 +494,3 @@ form h3 {
 #contact-social-media li:nth-child(5) {
   background: url(../imgs/socialIcons/M-2.png) center center no-repeat;
 }
-
