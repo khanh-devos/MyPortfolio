@@ -246,8 +246,8 @@ body {
 }
 
 #headline p {
+  margin-bottom: 12px;
   color: #fff;
-  margin: 12px 0;
   font-family: Poppins, fantasy;
   font-size: 16px;
   font-weight: 400;
