@@ -16,6 +16,7 @@ body {
 #main {
   display: flex;
   flex-direction: column;
+  /* border: 1px solid red; */
 }
 
 /* CLASS TAKE PRECEDE */
@@ -116,6 +117,7 @@ body {
 /* class l-f-skills */
 .l-f-skills {
   list-style: none;
+  padding: 1px 2px;
 }
 
 .l-f-skills li {
@@ -398,6 +400,10 @@ body {
   padding: 20px 0;
   padding-bottom: 10px;
 }
+
+#li-none { display: none; }
+
+#selenium { display: none; }
 
 #contact {
   width: 100%;

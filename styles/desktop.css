@@ -1,7 +1,8 @@
 #menu-btn { display: none; }
 
 #header {
-  padding: 16px calc(100% * 142/1440);
+  padding: 16px 142px;
+  padding-right: 150px;
 }
 
 /* My logo */
@@ -42,12 +43,13 @@
 
 /* headline */
 #headline {
-  height: 100vh;
-  padding: calc(264/870 * 100%) calc(731/1440 * 100%);
-  padding-left: calc(36/1440 * 100%);
+  position: relative;
+  height: 870px;
+  padding: 0 731px;
+  padding-left: 141px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center;  
 
   /* background image */
   background-size: 42% 90%;
@@ -58,11 +60,16 @@
 
 /* Social media */
 #headline .social-media {
-  float: left;
-  order: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 141px;
+  padding-left: 36px;
+
+  /* internal */
   flex-direction: column;
-  margin-left: 36p;
-  margin-right: 87px;
+  justify-content: center;
 }
 
 #headline h1 {
@@ -92,8 +99,8 @@
 
 /* works into-1 */
 #works {
-  padding: 130px 41px;
-  padding-right: 144px;
+  padding: 130px 141px;
+  padding-right: 143px;
 }
 #works-intro #intro-1 {
   display: flex;
@@ -186,6 +193,54 @@
   background-size: cover;
 }
 
+/* About me */
+#about-me {
+  padding: 0 142px;
+  background: #262626 url(../imgs/desk-resume.jpg) center right no-repeat;
+  background-size: 50% 30%; 
+  background-position-y: 10%;
+}
 
+#resume {
+  width: 100%;
+  height: 591px;
+  border-bottom: 1px solid #fff;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  padding-right: calc(100% * 732/1440);
+}
 
+#resume p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#resume #line-about {
+  display: none;
+}
+
+#lang-skills {
+  padding-right: 25px;
+  height: 604px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  text-align: left;
+}
+
+#lang-skills #frame,
+#lang-skills #skill {
+  padding-top: 0;
+  list-style-position: inside;
+}
+
+#li-none { 
+  display: block;
+  opacity: 0; 
+}
+
+#selenium { display: block; }
 
