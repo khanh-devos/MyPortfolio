@@ -27,7 +27,7 @@ body {
 
 .nav-buttons li {
   height: 40px;
-  width: auto;
+  max-width: fit-content;
   margin-right: 12px;
   display: flex;
   flex-direction: row;
@@ -39,7 +39,6 @@ body {
   text-decoration: none;
   padding: 12px 10px;
   height: 40px;
-  width: auto;
   font-family: Inter, fantasy;
   font-size: 15px;
   font-weight: 500;
@@ -51,7 +50,7 @@ body {
 /* general button */
 .btn-type-1 {
   height: 48px;
-  width: fit-content;
+  max-width: fit-content;
   padding: 12px 12px;
   font-family: Inter, fantasy;
   font-size: 17px;
@@ -257,6 +256,10 @@ body {
 }
 
 /* Works */
+#works-box-container-desktop {
+  display: none;
+}
+
 #works {
   padding: 120px 24px;
   display: grid;
