@@ -1,0 +1,49 @@
+
+#menu-btn { display: none; }
+
+#header {
+  padding: 16px 142px;
+}
+
+/* My logo */
+#header a {
+  padding: 10px 12px;
+  font-family: Inter, fantasy;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;      
+}
+
+/* navigation at header */
+#header-nav { 
+  display: flex;
+  flex-direction: row;
+}
+
+#header-nav li {
+  list-style-type: none;
+  margin: 0 16px;
+}
+
+#header-nav li a { 
+  font-family: Inter, fantasy;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;  
+}
+
+/* mail picture */
+#header-nav li:nth-child(4) {
+  width: 25px;
+  background: url(../imgs/socialIcons/Icon\ -\ Mail@2x.png) center center no-repeat;
+  background-size: 22px 18px;
+}
+
+/* headline */
+
+
+
+  

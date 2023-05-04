@@ -187,7 +187,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 48px;
   padding: 4px 24px;
 }
@@ -199,7 +199,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0;
   text-align: center;
   text-decoration: none;
 }
@@ -483,18 +482,3 @@ body {
   background: url(../imgs/socialIcons/M-2.png) center center no-repeat;
 }
 
-/* DESKTOP */
-@media screen and (min-width: 768px) {
-  #menu-btn { display: none; }
-
-  #header-nav { display: block; }
-
-  #header-nav ul { display: flex; }
-
-  #header-nav ul li {
-    list-style-type: none;
-    margin: 15px;
-  }
-
-  #header-nav ul li a { text-decoration: none; }
-}
