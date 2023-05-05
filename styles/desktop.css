@@ -250,7 +250,7 @@
 #contact form {
   height: 614px;
   display: grid;
-  grid-template-columns: 42% 55%;
+  grid-template-columns: 42% auto;
   gap: 24px;
   align-content: center;
 }
@@ -259,11 +259,10 @@
   text-align: left;
   font-size: 40px;
   line-height: 52px;
+  margin-bottom: 0;
 }
 
 #contact form h5 br { display: none; }
-
-#li-full-name { display: none; }
 
 #form-ul {
   flex-direction: row;
@@ -273,7 +272,7 @@
 
 #li-first-name,
 #li-last-name {
-  display: block;
+  display: none;
   min-width: 45%;
   height: 42px;
 }

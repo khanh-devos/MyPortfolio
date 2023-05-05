@@ -442,6 +442,7 @@ body {
 #form-ul li {
   width: 100%;
   text-align: center;
+  padding: 0;
 }
 
 #form-ul li input:not(.btn-type-1),
@@ -461,7 +462,8 @@ body {
 }
 
 #form-ul li textarea {
-  height: 148px;
+  height: 114px;
+  padding: 12px;
   border: none;
   font-family: Inter, fantasy;
   font-size: 15px;
