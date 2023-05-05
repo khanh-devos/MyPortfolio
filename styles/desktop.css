@@ -275,6 +275,7 @@
 #li-last-name {
   display: block;
   min-width: 45%;
+  height: 42px;
 }
 
 #li-email,
