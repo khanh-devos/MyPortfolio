@@ -27,7 +27,7 @@ body {
 
 .nav-buttons li {
   height: 40px;
-  width: auto;
+  max-width: fit-content;
   margin-right: 12px;
   display: flex;
   flex-direction: row;
@@ -39,7 +39,6 @@ body {
   text-decoration: none;
   padding: 12px 10px;
   height: 40px;
-  width: auto;
   font-family: Inter, fantasy;
   font-size: 15px;
   font-weight: 500;
@@ -51,7 +50,7 @@ body {
 /* general button */
 .btn-type-1 {
   height: 48px;
-  width: fit-content;
+  max-width: fit-content;
   padding: 12px 12px;
   font-family: Inter, fantasy;
   font-size: 17px;
@@ -117,6 +116,7 @@ body {
 /* class l-f-skills */
 .l-f-skills {
   list-style: none;
+  padding: 1px 2px;
 }
 
 .l-f-skills li {
@@ -187,7 +187,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 48px;
   padding: 4px 24px;
 }
@@ -199,7 +199,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0;
   text-align: center;
   text-decoration: none;
 }
@@ -247,8 +246,8 @@ body {
 }
 
 #headline p {
+  margin-bottom: 12px;
   color: #fff;
-  margin: 12px 0;
   font-family: Poppins, fantasy;
   font-size: 16px;
   font-weight: 400;
@@ -258,6 +257,10 @@ body {
 }
 
 /* Works */
+#works-box-container-desktop {
+  display: none;
+}
+
 #works {
   padding: 120px 24px;
   display: grid;
@@ -397,6 +400,10 @@ body {
   padding-bottom: 10px;
 }
 
+#li-none { display: none; }
+
+#selenium { display: none; }
+
 #contact {
   width: 100%;
   padding: 70px 23px;
@@ -423,12 +430,7 @@ body {
   justify-content: center;
 }
 
-#form-ul li {
-  width: 100%;
-  text-align: center;
-}
-
-#form-ul li:nth-child(1) {
+#contact form h5 {
   font-family: Inter, fantasy;
   font-size: 32px;
   font-weight: 700;
@@ -437,9 +439,15 @@ body {
   margin-bottom: 60px;
 }
 
+#form-ul li {
+  width: 100%;
+  text-align: center;
+}
+
 #form-ul li input:not(.btn-type-1),
 #form-ul li textarea {
   width: 100%;
+  height: 48px;
   margin-bottom: 24px;
   font-family: Inter, fantasy;
   font-size: 15px;
@@ -453,6 +461,7 @@ body {
 }
 
 #form-ul li textarea {
+  height: 148px;
   border: none;
   font-family: Inter, fantasy;
   font-size: 15px;
@@ -461,6 +470,12 @@ body {
   line-height: 24px;
   text-align: left;
   color: #3c3a39;
+  background: #fbf8f7;
+}
+
+#li-first-name,
+#li-last-name {
+  display: none;
 }
 
 #contact-social-media li:nth-child(1) {
@@ -481,20 +496,4 @@ body {
 
 #contact-social-media li:nth-child(5) {
   background: url(../imgs/socialIcons/M-2.png) center center no-repeat;
-}
-
-/* DESKTOP */
-@media screen and (min-width: 768px) {
-  #menu-btn { display: none; }
-
-  #header-nav { display: block; }
-
-  #header-nav ul { display: flex; }
-
-  #header-nav ul li {
-    list-style-type: none;
-    margin: 15px;
-  }
-
-  #header-nav ul li a { text-decoration: none; }
 }
