@@ -270,13 +270,6 @@
   gap: 24px;
 }
 
-#li-first-name,
-#li-last-name {
-  display: none;
-  min-width: 45%;
-  height: 42px;
-}
-
 #li-email,
 #li-text,
 #li-btn { min-width: 100%; }

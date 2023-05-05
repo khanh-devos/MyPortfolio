@@ -475,11 +475,6 @@ body {
   background: #fbf8f7;
 }
 
-#li-first-name,
-#li-last-name {
-  display: none;
-}
-
 #contact-social-media li:nth-child(1) {
   background: url(../imgs/socialIcons/gitIcon-2.png) center center no-repeat;
 }
