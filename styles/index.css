@@ -201,6 +201,17 @@ body {
   line-height: 24px;
   text-align: center;
   text-decoration: none;
+
+  /* animation for my logo */
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+/* animation for my logo */
+#header a:hover {
+  font-size: 30px;
+  rotate: 360deg;
 }
 
 #header-nav { display: none; }
