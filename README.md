@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -64,6 +65,14 @@ This project is based on HTML, CSS, Linters
 - **[Responsive]**
 - **[Dynamic]**
 - **[Profession]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://khanh-devos.github.io/MyPortfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,11 +159,11 @@ I would like to thank Microverse or devs who supported me to build this project.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[what are linters for?]**
+- **what are linters for?**
 
   - [A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipeia](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)).]
 
-- **[Linters can be used for all programming languages ?]**
+- **Linters can be used for all programming languages ?**
 
   - [No, not all languages can use linters, [details](https://github.com/microverseinc/linters-config)]
 
