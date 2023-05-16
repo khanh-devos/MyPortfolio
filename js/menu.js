@@ -18,15 +18,13 @@ function hideMenu() {
   a.style.opacity = 1;
 }
 
-function toggleHamburgerBtn() { // eslint-disable-line no-unused-vars
+function toggleHamburgerBtn() {
   const mobileMenu = document.querySelector('#mobile-menu');
-<<<<<<< HEAD
-=======
-  
->>>>>>> 983b7bd52daae6d01d31ab223704f94463d6184f
   if (mobileMenu.style.display === 'none' || !mobileMenu.style.display) {
     showMenu();
   } else {
     hideMenu();
   }
 }
+
+toggleHamburgerBtn();
