@@ -20,7 +20,6 @@ function hideMenu() {
 
 function toggleHamburgerBtn() { // eslint-disable-line no-unused-vars
   const mobileMenu = document.querySelector('#mobile-menu');
-  
   if (mobileMenu.style.display === 'none' || !mobileMenu.style.display) {
     showMenu();
   } else {
