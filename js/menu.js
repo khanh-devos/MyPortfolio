@@ -1,9 +1,28 @@
-function showMenu(x){
-  const mobile_menu = document.querySelector('#mobile-menu');
-  mobile_menu.style.display = "block";
+function showMenu() {
+  const mobileMenu = document.querySelector('#mobile-menu');
+  const img = document.querySelector('#menu-btn img');
+  const a = document.querySelector('#header a');
+
+  mobileMenu.style.display = 'block';
+  img.src = './imgs/x.svg';
+  a.style.opacity = 0;
 }
 
-function hideMenu(x){
-  const mobile_menu = document.querySelector('#mobile-menu');
-  mobile_menu.style.display = "none";  
+function hideMenu() {
+  const mobileMenu = document.querySelector('#mobile-menu');
+  const img = document.querySelector('#menu-btn img');
+  const a = document.querySelector('#header a');
+
+  mobileMenu.style.display = 'none';
+  img.src = './imgs/IconMenu.svg';
+  a.style.opacity = 1;
+}
+
+function toggleHamburgerBtn() { // eslint-disable-line no-unused-vars
+  const mobileMenu = document.querySelector('#mobile-menu');
+  if (mobileMenu.style.display === 'none') {
+    showMenu();
+  } else {
+    hideMenu();
+  }
 }

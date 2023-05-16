@@ -10,7 +10,6 @@ body {
   min-width: 375px;
   height: 100vh;
   background-color: #fff;
-  position: relative;
 }
 
 /* main */
@@ -209,20 +208,18 @@ body {
 }
 
 #menu-btn {
-  outline: none;
+  background: transparent;
   border: none;
-  background: transparent url(../imgs/IconMenu.png) center center no-repeat;
-  width: 40px;
-  height: 40px;
+  outline: none;
 }
 
 #mobile-menu {
+  position: absolute;
   display: none;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background: #3c3a39;
   box-shadow: 0 48px 48px 0 #252f8914;
   padding: 0 24px;
@@ -231,31 +228,21 @@ body {
 #mobile-menu li {
   list-style: none;
   padding: 15px 15px;
-  padding-top: 24px;
-  border-bottom: 1px solid #6f6c6b;
-}
-
-#mobile-menu #mobile-menu-l1 {
-  margin-top: 20px;
-  text-align: right;
-  list-style: none;
-  padding: 15px 15px;
-  padding-top: 24px;
-  border-bottom: unset;
 }
 
 #mobile-menu li a {
   text-decoration: none;
   font-family: Inter, fantasy;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
   text-align: left;
   color: #fff5e1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 /* headline */
 #headline {
+  position: relative;
   padding: 120px 24px;
   background: #1c1a19 url(../imgs/headline-bgImg.jpg) no-repeat;
   background-size: 50% 50%;

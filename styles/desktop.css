@@ -63,6 +63,10 @@
   background-position-y: 0;
 }
 
+#mobile-menu {
+  display: none;
+}
+
 /* Social media */
 #headline .social-media {
   position: absolute;
