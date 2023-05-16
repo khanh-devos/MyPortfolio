@@ -13,14 +13,19 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto|Crete Round|Poppins|Inter">
 
+    <script src="js/menu.js"></script>
+
     <title>Portfolio</title>
 </head>
 <body>
+
   <header id="header">
     <a href="">My Logo</a>  
     
-    
-    <button id="menu-btn"></button>
+    <button id="menu-btn" onclick=toggleHamburgerBtn()>
+      <img src="./imgs/IconMenu.svg" width="18px" height="12px" alt="menu btn">
+    </button>
+
     <ul id="header-nav">
       <li><a href="">Portfolio</a></li>
       <li><a href="">About</a></li>
@@ -28,10 +33,18 @@
       <li><a href=""></a></li>
     </ul>
 
+    
+    
   </header>
 
   <main id="main">
     <section id="headline">
+      <!-- For menu button -->
+      <ul id="mobile-menu">
+        <li><a href="#works" onclick="hideMenu()">Portfolio</a></li><hr>
+        <li><a href="#about-me" onclick="hideMenu()">About</a></li><hr>
+        <li><a href="#contact" onclick="hideMenu()">Contact</a></li><hr>
+      </ul>
 
       <div>
       <h1>Hey there.<br> I am Khanh.</h1>
