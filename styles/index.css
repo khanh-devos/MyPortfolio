@@ -214,14 +214,14 @@ body {
 }
 
 #mobile-menu {
-  position: absolute;
   display: none;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #3c3a39;
-  box-shadow: 0 48px 48px 0 #252f8914;
+  transition: height .5s ease-out;
   padding: 0 24px;
 }
 
