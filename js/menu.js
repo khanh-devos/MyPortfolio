@@ -66,6 +66,7 @@ function createProjects() {
 }
 
 function clickedButton(btn) {
+  document.querySelector('body').style.overflow = 'hidden';
   const projects = createProjects();
   const matchProject = projects[btn.id];
 
@@ -92,6 +93,8 @@ clickedButton(null);
 
 // Hide the popup
 function hidePopup() {
+  document.querySelector('body').style.overflow = 'auto';
+
   // remove all children of tech list
   const techList = document.querySelector('#popup-skill-btns ul');
   while (techList.firstElementChild) {

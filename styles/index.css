@@ -10,6 +10,8 @@ body {
   min-width: 375px;
   height: 100vh;
   background-color: #fff;
+  z-index: 0;
+  overflow: auto;
 }
 
 /* main */
