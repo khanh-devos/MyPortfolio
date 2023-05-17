@@ -112,7 +112,6 @@
 
 #works #popup {
   padding: 112px 142px;
-  
 }
 
 #popup #popup-content #popup-title-X {
@@ -126,9 +125,18 @@
 
 }
 
+#popup #popup-content #popup-info img {
+  height: 448px;
+}
+
 #popup #popup-content #popup-skill-btns {
   margin-top: 12px;
   margin-bottom: 40px;
+}
+
+#popup #popup-content #popup-info #popup-info-details #function-btns {
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 #works-intro #intro-1 {

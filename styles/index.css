@@ -354,6 +354,16 @@ body {
   grid-template-columns: auto;
 }
 
+#popup #popup-content #popup-info img {
+  height: 220px;
+}
+
+#popup #popup-content #popup-info #popup-info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #popup #popup-content #popup-info #popup-info-details p {
   color: #344563;
   font-family: Inter, fantasy;
