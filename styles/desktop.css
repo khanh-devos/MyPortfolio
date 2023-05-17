@@ -125,7 +125,7 @@
 
 }
 
-#popup #popup-content #popup-info img {
+#popup #popup-content #popup-info > img {
   height: 448px;
 }
 

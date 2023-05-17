@@ -293,16 +293,19 @@ body {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
-  position: relative;
 }
 
 #works #popup {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
+  display: none;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: rgba(0,0,0, 0.7);
   padding: 60px 16px;
+  overflow: auto;
 }
 
 #popup #popup-content {
@@ -354,7 +357,7 @@ body {
   grid-template-columns: auto;
 }
 
-#popup #popup-content #popup-info img {
+#popup #popup-content #popup-info > img {
   height: 220px;
 }
 

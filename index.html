@@ -13,7 +13,7 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto|Crete Round|Poppins|Inter">
 
-    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 
     <title>Portfolio</title>
 </head>
@@ -64,42 +64,42 @@
 
     <section id="works">
       <!-- popup window for each project -->
-      <div id="popup">
-        <div id="popup-content">
-          <div id="popup-title-X">
-            <h3>Project Title</h3>
-            <button id="popup-X-btn"><img src="./imgs/x.svg" alt=""></button>
-          </div>
+  <div id="popup">
+    <div id="popup-content">
+      <div id="popup-title-X">
+        <h3>Project Title</h3>
+        <button id="popup-X-btn" onclick="hidePopup()">
+          <img src="./imgs/x.svg" alt="">
+        </button>
+      </div>
 
+      <div id="popup-skill-btns">
+        <ul class="nav-buttons">
+          <!-- <li><a href=""></a></li> -->
+          
+        </ul>
+      </div>
 
-          <div id="popup-skill-btns">
-            <ul class="nav-buttons">
-              <li><a href="">HTML</a></li>
-              <li><a href="">Bootstrap</a></li>
-              <li><a href="">Ruby on Rails</a></li>
-            </ul>
-          </div>
-
-          <div id="popup-info">
-            <img width="100%" src="./imgs/works-bg.png" alt="project-image">
-            
-            <div id="popup-info-details">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
-              
-              <div id="function-btns">
-                <button class="btn-type-1">
-                  See Live
-                  <img width="20" src="./imgs/socialIcons/popupIcon.svg" alt="gitIcon">
-                </button>
-                </button>
-                <button class="btn-type-1">
-                  See Source 
-                  <img width="20" src="./imgs/socialIcons/gitIcon.svg" alt="gitIcon"></button>
-              </div>
-            </div>
+      <div id="popup-info">
+        <img width="100%" src="./imgs/works-bg.png" alt="project-image">
+        
+        <div id="popup-info-details">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+          
+          <div id="function-btns">
+            <button class="btn-type-1">
+              See Live
+              <img width="20" src="./imgs/socialIcons/popupIcon.svg" alt="gitIcon">
+            </button>
+            </button>
+            <button class="btn-type-1">
+              See Source 
+              <img width="20" src="./imgs/socialIcons/gitIcon.svg" alt="gitIcon"></button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
       <div id="works-intro">
         
@@ -123,7 +123,7 @@
               <li><a href="">Ruby</a></li>
             </ul>
             
-            <button class="btn-type-1">See Project</button>
+            <button id="project0" onclick="clickedButton(this)" class="btn-type-1">See Project</button>
           </div>
 
         </div>
@@ -141,7 +141,7 @@
             <li><a href="">Ruby</a></li>
           </ul>
 
-          <button class="btn-type-1 box-btn">See Project</button>
+          <button id="project1" onclick="clickedButton(this)" class="btn-type-1 box-btn">See Project</button>
         </div>   
 
         <div class="works-box">
@@ -154,7 +154,7 @@
             <li><a href="">Ruby</a></li>
           </ul>
 
-          <button class="btn-type-1 box-btn">See Project</button>
+          <button id="project2" onclick="clickedButton(this)" class="btn-type-1 box-btn">See Project</button>
         </div> 
 
         <div class="works-box">
@@ -167,7 +167,7 @@
             <li><a href="">Ruby</a></li>
           </ul>
 
-          <button class="btn-type-1 box-btn">See Project</button>
+          <button id="project3" onclick="clickedButton(this)" class="btn-type-1 box-btn">See Project</button>
         </div> 
 
         <div class="works-box">
@@ -180,7 +180,7 @@
             <li><a href="">Ruby</a></li>
           </ul>
 
-          <button class="btn-type-1 box-btn">See Project</button>
+          <button id="project4" onclick="clickedButton(this)" class="btn-type-1 box-btn">See Project</button>
         </div> 
 
         <div class="works-box">
@@ -193,7 +193,7 @@
             <li><a href="">Ruby</a></li>
           </ul>
 
-          <button class="btn-type-1 box-btn">See Project</button>
+          <button id="project5" onclick="clickedButton(this)" class="btn-type-1 box-btn">See Project</button>
         </div> 
 
         <div class="works-box">
@@ -206,7 +206,7 @@
             <li><a href="">Ruby</a></li>
           </ul>
 
-          <button class="btn-type-1 box-btn">See Project</button>
+          <button id="project6" onclick="clickedButton(this)" class="btn-type-1 box-btn">See Project</button>
         </div>
         
         <!-- DESKTOP -->
