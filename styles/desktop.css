@@ -110,6 +110,27 @@
   padding-right: 143px;
 }
 
+#works #popup {
+  padding: 112px 142px;
+  
+}
+
+#popup #popup-content #popup-title-X {
+  min-height: fit-content;
+}
+
+#popup #popup-content #popup-info {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+
+}
+
+#popup #popup-content #popup-skill-btns {
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
 #works-intro #intro-1 {
   display: flex;
   flex-direction: row;

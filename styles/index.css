@@ -293,6 +293,92 @@ body {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  position: relative;
+}
+
+#works #popup {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0, 0.7);
+  padding: 60px 16px;
+}
+
+#popup #popup-content {
+  background: #fff;
+  padding: 16px;
+  border: 1px solid red;
+}
+
+#popup #popup-content #popup-title-X {
+  display: flex;
+  flex-direction: row;
+  padding-right: 14px;
+  padding-top: 2px;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 82px;
+}
+
+#popup #popup-content #popup-title-X h3 {
+  color: #172b4d;
+  font-family: Roboto, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  flex-grow: 1;
+}
+
+#popup #popup-content #popup-title-X button {
+  border: none;
+  outline: none;
+  background: none;
+  margin-top: 5px;
+}
+
+#popup #popup-content #popup-skill-btns {
+  margin: 24px 0;
+}
+
+#popup #popup-content #popup-skill-btns ul li a {
+  font-family: Poppins, fantasy;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+}
+
+#popup #popup-content #popup-info {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+#popup #popup-content #popup-info #popup-info-details p {
+  color: #344563;
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 24px 0;
+}
+
+#popup #popup-content #popup-info #popup-info-details #function-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#popup-info-details #function-btns button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#popup-info-details #function-btns button img {
+  margin-left: 16px;
 }
 
 #works-intro {
