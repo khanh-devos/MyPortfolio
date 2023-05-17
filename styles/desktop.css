@@ -122,7 +122,15 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 25px;
+}
 
+#wbox-1 img {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 20px;
+  height: auto;
+  z-index: 2;
 }
 
 #popup #popup-content #popup-info > img {
@@ -204,15 +212,6 @@
   position: relative;
   background: url(../imgs/box1.png) center center no-repeat;
   background-size: cover;
-}
-
-#wbox-1 img {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  width: 20px;
-  height: auto;
-  z-index: 2;
 }
 
 #works-box-container-desktop .works-box:not(#wbox-1) button { display: none; }
