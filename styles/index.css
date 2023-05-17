@@ -297,18 +297,21 @@ body {
 }
 
 #works #popup {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
   width: 100%;
-  min-height: 100vh;
-  background: rgba(0,0,0, 0.7);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
   padding: 60px 16px;
+  overflow: auto;
 }
 
 #popup #popup-content {
   background: #fff;
   padding: 16px;
-  border: 1px solid red;
 }
 
 #popup #popup-content #popup-title-X {
@@ -321,13 +324,15 @@ body {
   min-height: 82px;
 }
 
-#popup #popup-content #popup-title-X h3 {
-  color: #172b4d;
-  font-family: Roboto, fantasy;
-  font-size: 32px;
-  font-weight: 700;
-  text-align: left;
-  flex-grow: 1;
+#contact form button {
+  align-self: center;
+}
+
+#popup-info-details #function-btns button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 #popup #popup-content #popup-title-X button {
@@ -335,6 +340,24 @@ body {
   outline: none;
   background: none;
   margin-top: 5px;
+}
+
+#works-intro h3 {
+  font-family: Crete Round, fantasy;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  text-align: left;
+  color: #1c1a19;
+}
+
+#popup #popup-content #popup-title-X h3 {
+  color: #172b4d;
+  font-family: Roboto, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  flex-grow: 1;
 }
 
 #popup #popup-content #popup-skill-btns {
@@ -354,6 +377,11 @@ body {
   grid-template-columns: auto;
 }
 
+#popup-info-details #function-btns button > img {
+  margin-left: 16px;
+  max-height: 100%;
+}
+
 #popup #popup-content #popup-info img {
   height: 220px;
 }
@@ -362,6 +390,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#works-intro p {
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #091e42;
+}
+
+#resume p {
+  margin: 24px 0;
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #f4f5f7;
 }
 
 #popup #popup-content #popup-info #popup-info-details p {
@@ -380,30 +427,10 @@ body {
   justify-content: space-between;
 }
 
-#popup-info-details #function-btns button {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-#popup-info-details #function-btns button img {
-  margin-left: 16px;
-}
-
 #works-intro {
   display: flex;
   flex-direction: column;
   background-color: transparent;
-}
-
-#works-intro h3 {
-  font-family: Crete Round, fantasy;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 52px;
-  text-align: left;
-  color: #1c1a19;
 }
 
 #works-intro #line {
@@ -424,15 +451,6 @@ body {
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  text-align: left;
-  color: #091e42;
-}
-
-#works-intro p {
-  font-family: Inter, fantasy;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   text-align: left;
   color: #091e42;
 }
@@ -460,16 +478,6 @@ body {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-}
-
-#resume p {
-  margin: 24px 0;
-  font-family: Inter, fantasy;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #f4f5f7;
 }
 
 #line-about {
@@ -539,10 +547,6 @@ body {
 #contact form {
   border-bottom: 1px solid #dfe1e6;
   padding-bottom: 78px;
-}
-
-#contact form button {
-  align-self: center;
 }
 
 #form-ul {
