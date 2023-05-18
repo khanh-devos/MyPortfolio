@@ -84,6 +84,7 @@ body {
 
 /* class works-box */
 .works-box {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -91,8 +92,6 @@ body {
   margin-top: 24px;
   padding: 72px 19px;
   padding-bottom: 0;
-  background: url(../imgs/works-bg.png) center center no-repeat;
-  background-size: 100% 100%;
 }
 
 .works-box h2 {
@@ -303,7 +302,6 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  display: none;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);

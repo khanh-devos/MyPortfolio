@@ -133,6 +133,12 @@
   z-index: 2;
 }
 
+#works-box-container-desktop #project0 img {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
 #popup #popup-content #popup-info > img {
   height: 448px;
 }
@@ -208,24 +214,8 @@
   justify-content: flex-end;
 }
 
-#wbox-1 {
+#works-box-container-desktop #project0 {
   position: relative;
-  background: url(../imgs/box1.png) center center no-repeat;
-  background-size: cover;
-}
-
-#works-box-container-desktop .works-box:not(#wbox-1) button { display: none; }
-
-#wbox-2,
-#wbox-5 {
-  background: url(../imgs/box-2.png) center center no-repeat;
-  background-size: cover;
-}
-
-#wbox-3,
-#wbox-6 {
-  background: url(../imgs/box-3.png) center center no-repeat;
-  background-size: cover;
 }
 
 /* About me */
