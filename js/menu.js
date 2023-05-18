@@ -49,10 +49,10 @@ function mobileProjects() {
 function desktopProjects() {
   return {
     project0: {
-      title: '',
+      title: 'Professional Art Priting',
       img: './imgs/box1.png',
       tech: [],
-      description: '',
+      description: 'Our fast and friendly service produces the perfect print for you, everytime. We only use the finest materials and process to make all prints that will take your breath away with their details, colour accuracy and impact.',
     },
     project1: {
       title: 'Data Dashboard Healthcare',
@@ -122,8 +122,8 @@ function desktopCards() {
     id="${item}"
     ${item === 'project0' ? '' : 'onclick="clickedDesktopBtn(this)"'}
     >
-    <h2>${project.title}</h2>
-    <p>${project.description}</p>
+    <h2>${item === 'project0' ? '' : `${project.title}`}</h2>
+    <p>${item === 'project0' ? '' : `${project.description}`}</p>
 
     <ul class="nav-buttons box-nav">
       ${project.tech[0] === undefined ? '' : `<li><a href="">${project.tech[0]}</a></li>`}
