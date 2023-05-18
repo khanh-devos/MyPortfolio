@@ -120,7 +120,7 @@ function desktopCards() {
     return `<div class="works-box" 
     style="background: url(${project.img}) center center no-repeat; background-size: cover;"
     id="${item}"
-    onclick="clickedDesktopBtn(this)"
+    ${item === 'project0' ? '' : 'onclick="clickedDesktopBtn(this)"'}
     >
     <h2>${project.title}</h2>
     <p>${project.description}</p>
@@ -131,9 +131,9 @@ function desktopCards() {
       ${project.tech[2] === undefined ? '' : `<li><a href="">${project.tech[2]}</a></li>`}
     </ul>
 
-    ${item === 'project0' ? '<img width=30 height=30 src="./imgs/socialIcons/Shape.png" alt="cursor">' : ''}
+    ${item === 'project0' ? '<img width=20 height=20 src="./imgs/socialIcons/Shape.png" alt="cursor">' : ''}
 
-    ${item === 'project0' ? '<button class="btn-type-1 box-btn">See Project</button>' : ''}
+    ${item === 'project0' ? '<button id="project0" onclick="clickedDesktopBtn(this)" class="btn-type-1 box-btn">See Project</button>' : ''}
   </div> `;
   });
   return cards;
