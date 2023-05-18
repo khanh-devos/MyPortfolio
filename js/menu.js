@@ -60,10 +60,30 @@ function createProjects() {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    },
-  };
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's "
+
+    }
+  }
 }
+
+function showProject() {
+  const projects = createProjects();
+  const card = projects.map(item => {
+    return `<div class="works-box" id="wbox-2">
+    <h2>${item.title}</h2>
+    <p>${item.description}</p>
+
+    <ul class="nav-buttons box-nav">
+      <li><a href="">${item.tech[0]}</a></li>
+      <li><a href="">${item.tech[1]}</a></li>
+      <li><a href="">${item.tech[2]}</a></li>
+    </ul>
+
+    <button class="btn-type-1 box-btn">See Project</button>
+  </div> `
+  })
+}
+
 
 function clickedButton(btn) {
   document.querySelector('body').style.overflow = 'hidden';
