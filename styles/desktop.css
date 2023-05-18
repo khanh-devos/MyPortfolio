@@ -110,6 +110,49 @@
   padding-right: 143px;
 }
 
+#works #popup {
+  padding: 112px 142px;
+}
+
+#popup #popup-content #popup-title-X {
+  min-height: fit-content;
+}
+
+#popup #popup-content #popup-info {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+}
+
+#wbox-1 img {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 20px;
+  height: auto;
+  z-index: 2;
+}
+
+#works-box-container-desktop #project0 img {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+#popup #popup-content #popup-info > img {
+  height: 448px;
+}
+
+#popup #popup-content #popup-skill-btns {
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+#popup #popup-content #popup-info #popup-info-details #function-btns {
+  justify-content: flex-start;
+  gap: 12px;
+}
+
 #works-intro #intro-1 {
   display: flex;
   flex-direction: row;
@@ -171,33 +214,8 @@
   justify-content: flex-end;
 }
 
-#wbox-1 {
+#works-box-container-desktop #project0 {
   position: relative;
-  background: url(../imgs/box1.png) center center no-repeat;
-  background-size: cover;
-}
-
-#wbox-1 img {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  width: 20px;
-  height: auto;
-  z-index: 2;
-}
-
-#works-box-container-desktop .works-box:not(#wbox-1) button { display: none; }
-
-#wbox-2,
-#wbox-5 {
-  background: url(../imgs/box-2.png) center center no-repeat;
-  background-size: cover;
-}
-
-#wbox-3,
-#wbox-6 {
-  background: url(../imgs/box-3.png) center center no-repeat;
-  background-size: cover;
 }
 
 /* About me */

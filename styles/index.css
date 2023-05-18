@@ -10,6 +10,8 @@ body {
   min-width: 375px;
   height: 100vh;
   background-color: #fff;
+  z-index: 0;
+  overflow: auto;
 }
 
 /* main */
@@ -37,7 +39,7 @@ body {
 
 .nav-buttons li a {
   text-decoration: none;
-  padding: 12px 10px;
+  padding: 10px 12px;
   height: 40px;
   font-family: Inter, fantasy;
   font-size: 15px;
@@ -82,6 +84,7 @@ body {
 
 /* class works-box */
 .works-box {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -89,8 +92,6 @@ body {
   margin-top: 24px;
   padding: 72px 19px;
   padding-bottom: 0;
-  background: url(../imgs/works-bg.png) center center no-repeat;
-  background-size: 100% 100%;
 }
 
 .works-box h2 {
@@ -293,12 +294,52 @@ body {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  position: relative;
 }
 
-#works-intro {
+#works #popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 60px 16px;
+  overflow: auto;
+}
+
+#popup #popup-content {
+  background: #fff;
+  padding: 16px;
+}
+
+#popup #popup-content #popup-title-X {
   display: flex;
-  flex-direction: column;
-  background-color: transparent;
+  flex-direction: row;
+  padding-right: 14px;
+  padding-top: 2px;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 82px;
+}
+
+#contact form button {
+  align-self: center;
+}
+
+#popup-info-details #function-btns button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#popup #popup-content #popup-title-X button {
+  border: none;
+  outline: none;
+  background: none;
+  margin-top: 5px;
 }
 
 #works-intro h3 {
@@ -308,6 +349,88 @@ body {
   line-height: 52px;
   text-align: left;
   color: #1c1a19;
+}
+
+#popup #popup-content #popup-title-X h3 {
+  color: #172b4d;
+  font-family: Roboto, fantasy;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  flex-grow: 1;
+}
+
+#popup #popup-content #popup-skill-btns {
+  margin: 24px 0;
+}
+
+#popup #popup-content #popup-skill-btns ul li a {
+  font-family: Poppins, fantasy;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+}
+
+#popup #popup-content #popup-info {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+#popup-info-details #function-btns button > img {
+  margin-left: 16px;
+  max-height: 100%;
+}
+
+#popup #popup-content #popup-info img {
+  height: 220px;
+}
+
+#popup #popup-content #popup-info #popup-info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#works-intro p {
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #091e42;
+}
+
+#resume p {
+  margin: 24px 0;
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #f4f5f7;
+}
+
+#popup #popup-content #popup-info #popup-info-details p {
+  color: #344563;
+  font-family: Inter, fantasy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 24px 0;
+}
+
+#popup #popup-content #popup-info #popup-info-details #function-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#works-intro {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 #works-intro #line {
@@ -328,15 +451,6 @@ body {
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  text-align: left;
-  color: #091e42;
-}
-
-#works-intro p {
-  font-family: Inter, fantasy;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   text-align: left;
   color: #091e42;
 }
@@ -364,16 +478,6 @@ body {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-}
-
-#resume p {
-  margin: 24px 0;
-  font-family: Inter, fantasy;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #f4f5f7;
 }
 
 #line-about {
@@ -443,10 +547,6 @@ body {
 #contact form {
   border-bottom: 1px solid #dfe1e6;
   padding-bottom: 78px;
-}
-
-#contact form button {
-  align-self: center;
 }
 
 #form-ul {
