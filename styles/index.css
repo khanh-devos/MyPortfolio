@@ -602,6 +602,16 @@ body {
   background: #fbf8f7;
 }
 
+#form-ul #email-err {
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 17px;
+  font-style: italic;
+  font-family: Inter, fantasy;
+}
+
 #contact-social-media li:nth-child(1) {
   background: url(../imgs/socialIcons/gitIcon-2.png) center center no-repeat;
 }

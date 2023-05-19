@@ -292,6 +292,10 @@
   gap: 24px;
 }
 
+#form-ul #email-err {
+  width: fit-content;
+}
+
 #li-email,
 #li-text,
 #li-btn { min-width: 100%; }
