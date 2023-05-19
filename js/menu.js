@@ -193,8 +193,6 @@ function toggleHamburgerBtn() {
   }
 }
 
-toggleHamburgerBtn();
-
 // popup window
 function showPopup(project) {
   // dynamic the tech
@@ -260,13 +258,13 @@ function clickedDesktopBtn(btn) {
   worksBox.innerHTML = showPopup(matchProject);
 }
 
-clickedMobileBtn(null);
-clickedDesktopBtn(null);
-
 // Hide the popup
 function hidePopup() {
   document.querySelector('body').style.overflow = 'auto';
   document.querySelector('#popup-window').innerHTML = '';
 }
 
+clickedMobileBtn(null);
+clickedDesktopBtn(null);
+toggleHamburgerBtn();
 hidePopup();
