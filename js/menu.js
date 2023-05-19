@@ -139,29 +139,42 @@ function desktopCards() {
   return cards;
 }
 
-function validateEmail(email) {
+function validateEmail(event) {
+  let email = document.querySelector('#form').elements['email'].value;
+
+  // check email
   const res = email.match(/[A-Z]/g);
   const input = document.querySelector('form #li-btn input')
   const li = document.querySelector("form #li-btn");
-  const child = document.createElement('small')
+  const child = document.createElement('i')
   let msg = '';
 
-  if (res) msg = "email should be lowercase only"
+  if (res) {
+    msg = "email should be lowercase only";
+    event.preventDefault();
+  }
   else return null
+
+  // add popup error
   child.innerText = msg;
-  child.style.color = 'red'; 
-  li.insertBefore(child, input);
+  child.style.color = 'red';
+  child.id = "email-err"
+  li.style.position = 'relative';
+  if (li.childElementCount === 1) li.insertBefore(child, input);
+
+  // remove the msg
+  setTimeout(() => {
+    li.style.position = 'block';
+    child.remove()
+  }, 4000);
 }
 
 window.onload = () => {
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
 
-  document.querySelector('#form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    let email = document.forms[0].elements['email'].value
-    validateEmail(email);
-  }) 
+  // validate form
+  document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event))
 };
 
 function toggleHamburgerBtn() {
