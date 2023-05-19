@@ -139,9 +139,37 @@ function desktopCards() {
   return cards;
 }
 
+
+function formPopup(msg) {
+  const input = document.querySelector('form #li-btn input')
+  const li = document.querySelector("form #li-btn");
+  const child = document.createElement('small')
+  child.innerText = msg;
+  child.style.color = 'red';  
+  
+  li.insertBefore(child, input);
+  
+  // setTimeout(()=>{
+  //   li.removeChild(li.lastChild)
+  // }, 5000);
+}
+
+function validateEmail(email) {
+  const res = email.match(/[A-Z]/g);
+  if (res) return "email should be lowercase only"
+  else return null
+}
+
 window.onload = () => {
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
+
+  document.querySelector('#form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    let email = document.forms[0].elements['email'].value
+    const response = validateEmail(email)
+    formPopup(response);
+  }) 
 };
 
 function toggleHamburgerBtn() {
