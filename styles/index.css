@@ -374,7 +374,7 @@ body {
 
 #popup #popup-content #popup-info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   height: 70%;
 }
 
