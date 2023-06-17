@@ -328,7 +328,7 @@ body {
   align-self: center;
 }
 
-#popup-info-details #function-btns button {
+#popup-info-details #function-btns .btn-type-1 {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -375,15 +375,17 @@ body {
 #popup #popup-content #popup-info {
   display: grid;
   grid-template-columns: auto;
+  max-height: 500px;
+  overflow: auto;
 }
 
-#popup-info-details #function-btns button > img {
+#popup-info-details #function-btns .btn-type-1 > img {
   margin-left: 16px;
   max-height: 100%;
 }
 
-#popup #popup-content #popup-info img {
-  height: 220px;
+#popup #popup-content #popup-info #popup-img {
+  height: auto;
 }
 
 #popup #popup-content #popup-info #popup-info-details {
@@ -440,7 +442,7 @@ body {
   background-color: #212121;
 }
 
-#works-intro image {
+#works-intro #img_proj0 {
   height: auto;
   width: 100%;
 }
