@@ -1,8 +1,19 @@
+:root {
+  --padding: 150px;
+
+  @media screen and (max-width: 1100px) {
+    --padding: 100px;
+  }
+
+  @media screen and (max-width: 900px) {
+    --padding: 70px;
+  }
+}
+
 #menu-btn { display: none; }
 
 #header {
-  padding: 16px 142px;
-  padding-right: 150px;
+  padding: 16px var(--padding);
 }
 
 /* My logo */
@@ -51,8 +62,8 @@
 #headline {
   position: relative;
   height: 870px;
-  padding: 0 calc(100% * 731 / 1440);
-  padding-left: 141px;
+  padding: 0 calc(100% * 600 / 1440);
+  padding-left: var(--padding);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,12 +84,12 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 141px;
-  padding-left: 36px;
+  width: var(--padding);
 
   /* internal */
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #headline h1 {
@@ -106,8 +117,7 @@
 
 /* works into-1 */
 #works {
-  padding: 130px 141px;
-  padding-right: 143px;
+  padding: 130px var(--padding);
 }
 
 #works #popup {
@@ -176,7 +186,7 @@
 /* works intro-2 */
 #works-intro #intro-2 {
   display: grid;
-  grid-template-columns: calc(100% * 684 / 1156) auto;
+  grid-template-columns: calc(100% * 760 / 1156) auto;
   gap: 24px;
 }
 
@@ -220,7 +230,7 @@
 
 /* About me */
 #about-me {
-  padding: 0 142px;
+  padding: 0 var(--padding);
   background: #262626 url(../imgs/desk-resume.jpg) center right no-repeat;
   background-size: 50% 30%;
   background-position-y: 10%;
@@ -265,7 +275,7 @@
 
 /* contact */
 #contact {
-  padding: 0 140px;
+  padding: 0 var(--padding);
   height: 686px;
 }
 

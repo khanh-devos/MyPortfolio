@@ -1,47 +1,60 @@
 function mobileProjects() {
   return {
     project0: {
-      title: 'Multi-Post Stories',
-      img: './imgs/works.png',
-      tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      title: 'Electric Battery Conference',
+      img: './imgs/projectImgs/capstone1.jpg',
+      tech: ['CSS', 'HTML', 'Bootstrap', 'DOM'],
+      description: "a webapp is to launch a new event named 'Electric Battery' to the audiences, having 2 pages Home and About, showing the event place and time, mobile view and desktop view is designed.",
+      url: 'https://khanh-devos.github.io/Capstone1-conference/',
+      git: 'https://github.com/khanh-devos/Capstone1-conference',
     },
     project1: {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project2: {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project3: {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project4: {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project5: {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project6: {
       title: 'Profesional Art Printing Data',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's ",
-
+      url: '',
+      git: '',
     },
   };
 }
@@ -49,40 +62,52 @@ function mobileProjects() {
 function desktopProjects() {
   return {
     project0: {
-      title: 'Professional Art Priting',
-      img: './imgs/box1.png',
+      title: 'TO DO List',
+      img: './imgs/projectImgs/todolist_mobile.jpg',
       tech: [],
-      description: 'Our fast and friendly service produces the perfect print for you, everytime. We only use the finest materials and process to make all prints that will take your breath away with their details, colour accuracy and impact.',
+      description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
+      url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
+      git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
     project1: {
       title: 'Data Dashboard Healthcare',
       img: './imgs/box-2.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project2: {
       title: 'Website Portfolio',
       img: './imgs/box-3.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project3: {
       title: 'Profesional Art Printing Data More',
       img: './imgs/works-bg.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project4: {
       title: 'Data Dashboard Healthcare',
       img: './imgs/box-2.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
     project5: {
       title: 'Website Portfolio',
       img: './imgs/box-3.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      url: '',
+      git: '',
     },
   };
 }
@@ -118,7 +143,7 @@ function desktopCards() {
     const project = projects[item];
 
     return `<div class="works-box" 
-    style="background: url(${project.img}) center center no-repeat; background-size: cover;"
+    style="background: url(${project.img}) top center no-repeat; background-size: cover;"
     id="${item}"
     ${item === 'project0' ? '' : 'onclick="clickedDesktopBtn(this)"'}
     >
@@ -215,22 +240,24 @@ function showPopup(project) {
     </div>
 
     <div id="popup-info">
-      <img width="100%" src="${project.img}" alt="project-image">
+      <img id='popup-img' width="100%" src="${project.img}" alt="project-image">
 
       <div id="popup-info-details">
         <p>${project.description}</p>
 
         <div id="function-btns">
-          <button class="btn-type-1">
+          <a class="btn-type-1" href="${project.url}">
             See Live
             <img width="20" src="./imgs/socialIcons/popupIcon.svg" alt="popupIcon">
-          </button>
-          </button>
-          <button class="btn-type-1">
+          </a>
+          
+          <a class="btn-type-1" href="${project.git}">
             See Source
-            <img width="20" src="./imgs/socialIcons/gitIcon.svg" alt="gitIcon"></button>
+            <img width="20" src="./imgs/socialIcons/gitIcon.svg" alt="gitIcon">
+          </a>
         </div>
       </div>
+      
     </div>
   </div>
 </div>`;
