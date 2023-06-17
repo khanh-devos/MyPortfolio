@@ -15,6 +15,8 @@ function handleChange(event) {
 function handleRefresh() {
   // call out form data from session storage
   const formData = JSON.parse(sessionStorage.getItem('formData'));
+  if (!formData) return;
+
   const form = document.querySelector('#form');
   form.elements.fullname.value = formData.fullname;
   form.elements.email.value = formData.email;

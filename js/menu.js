@@ -207,20 +207,21 @@ function toggleHamburgerBtn() {
   const logo = document.querySelector('#header a');
 
   // expression
-  if (mobileMenu.style.display === 'none' || !mobileMenu.style.display) {
-    mobileMenu.style.display = 'block';
-    img.src = './imgs/x.svg';
-    logo.style.opacity = 0;
-  } else {
+  if (mobileMenu.style.display === 'block' || !mobileMenu.style.display) {
     mobileMenu.style.display = 'none';
     img.src = './imgs/IconMenu.svg';
     logo.style.opacity = 1;
+  } else {
+    mobileMenu.style.display = 'block';
+    img.src = './imgs/x.svg';
+    logo.style.opacity = 0;
   }
 }
 
 // popup window
 function showPopup(project) {
   // dynamic the tech
+  if (!project) return null;
   const lis = project.tech.map((tech) => `<li><a href="">${tech}</a></li>`);
 
   // setup the popup
@@ -264,6 +265,8 @@ function showPopup(project) {
 }
 
 function clickedMobileBtn(btn) {
+  if (!btn) return;
+
   const body = document.querySelector('body');
   body.style.overflow = 'hidden';
 
@@ -275,6 +278,8 @@ function clickedMobileBtn(btn) {
 }
 
 function clickedDesktopBtn(btn) {
+  if (!btn) return;
+
   const body = document.querySelector('body');
   body.style.overflow = 'hidden';
 
