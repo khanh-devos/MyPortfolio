@@ -3,8 +3,8 @@ function mobileProjects() {
     project0: {
       title: 'Electric Battery Conference',
       img: './imgs/projectImgs/capstone1.jpg',
-      tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      tech: ['CSS', 'HTML', 'Bootstrap', 'DOM'],
+      description: "a webapp is to launch a new event named 'Electric Battery' to the audiences, having 2 pages Home and About, showing the event place and time, mobile view and desktop view is designed.",
       url: 'https://khanh-devos.github.io/Capstone1-conference/',
       git: 'https://github.com/khanh-devos/Capstone1-conference',
     },
@@ -65,7 +65,7 @@ function desktopProjects() {
       title: 'TO DO List',
       img: './imgs/projectImgs/todolist_mobile.jpg',
       tech: [],
-      description: 'Our fast and friendly service produces the perfect print for you, everytime. We only use the finest materials and process to make all prints that will take your breath away with their details, colour accuracy and impact.',
+      description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
       url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
       git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
@@ -257,6 +257,7 @@ function showPopup(project) {
           </a>
         </div>
       </div>
+      
     </div>
   </div>
 </div>`;

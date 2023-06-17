@@ -186,7 +186,7 @@
 /* works intro-2 */
 #works-intro #intro-2 {
   display: grid;
-  grid-template-columns: calc(100% * 684 / 1156) auto;
+  grid-template-columns: calc(100% * 760 / 1156) auto;
   gap: 24px;
 }
 

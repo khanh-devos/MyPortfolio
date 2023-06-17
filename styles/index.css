@@ -374,9 +374,8 @@ body {
 
 #popup #popup-content #popup-info {
   display: grid;
-  grid-template-columns: auto;
-  max-height: 500px;
-  overflow: auto;
+  grid-template-columns: auto auto;
+  height: 70%;
 }
 
 #popup-info-details #function-btns .btn-type-1 > img {
