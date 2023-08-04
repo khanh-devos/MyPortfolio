@@ -472,6 +472,10 @@ body {
   background-position-y: 95%;
 }
 
+.resume-link {
+  text-decoration: none;
+}
+
 #resume h2 {
   font-family: Crete Round, fantasy;
   font-size: 72px;
