@@ -9,20 +9,20 @@ function mobileProjects() {
       git: 'https://github.com/khanh-devos/Capstone1-conference',
     },
     project1: {
-      title: 'Profesional Art Printing Data',
-      img: './imgs/works-bg.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Space Travel',
+      img: './imgs/projectImgs/earthFromSpace.jpg',
+      tech: ['Reactjs', 'Redux', 'Jest'],
+      description: "React-redux-group works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.",
+      url: 'https://khanh-devos.github.io/react-redux-group-kanban/',
+      git: 'https://github.com/khanh-devos/react-redux-group-kanban',
     },
     project2: {
-      title: 'Profesional Art Printing Data',
-      img: './imgs/works-bg.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'TO DO List',
+      img: './imgs/projectImgs/pomodoro2.jpg',
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
+      url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
+      git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
     project3: {
       title: 'Profesional Art Printing Data',
@@ -70,16 +70,16 @@ function desktopProjects() {
       git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
     project1: {
-      title: 'Data Dashboard Healthcare',
-      img: './imgs/box-2.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Space Travel',
+      img: './imgs/projectImgs/earthFromSpace.jpg',
+      tech: ['Reactjs', 'Redux', 'Jest'],
+      description: "React-redux-group works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.",
+      url: 'https://khanh-devos.github.io/react-redux-group-kanban/',
+      git: 'https://github.com/khanh-devos/react-redux-group-kanban',
     },
     project2: {
-      title: 'Website Portfolio',
-      img: './imgs/box-3.png',
+      title: 'Data Dashboard Healthcare',
+      img: './imgs/box-2.png',
       tech: ['HTML', 'Bootstrap', 'Ruby'],
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
       url: '',
@@ -116,7 +116,7 @@ function mobileCards() {
   const projects = mobileProjects();
   delete projects.project0;
 
-  const cards = Object.keys(projects).map((item) => {
+  const cards = Object.keys(projects).map((item, i) => {
     const project = projects[item];
 
     return `<div class="works-box" style="background: url(${project.img}) center center no-repeat; background-size: 100% 100%;">
@@ -130,7 +130,7 @@ function mobileCards() {
       <li><a href="">${project.tech[2]}</a></li>
     </ul>
 
-    <button id="project1" onclick="clickedMobileBtn(this)" class="btn-type-1 box-btn">See Project</button>
+    <button id="project${i+1}" onclick="clickedMobileBtn(this)" class="btn-type-1 box-btn">See Project</button>
   </div>`;
   });
   return cards;
