@@ -12,7 +12,7 @@ function mobileProjects() {
       title: 'Space Travel',
       img: './imgs/projectImgs/earthFromSpace.jpg',
       tech: ['Reactjs', 'Redux', 'Jest'],
-      description: "React-redux-group works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.",
+      description: 'React-redux-group works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.',
       url: 'https://khanh-devos.github.io/react-redux-group-kanban/',
       git: 'https://github.com/khanh-devos/react-redux-group-kanban',
     },
@@ -73,7 +73,7 @@ function desktopProjects() {
       title: 'Space Travel',
       img: './imgs/projectImgs/earthFromSpace.jpg',
       tech: ['Reactjs', 'Redux', 'Jest'],
-      description: "React-redux-group works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.",
+      description: 'React-redux-group works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.',
       url: 'https://khanh-devos.github.io/react-redux-group-kanban/',
       git: 'https://github.com/khanh-devos/react-redux-group-kanban',
     },
@@ -130,7 +130,7 @@ function mobileCards() {
       <li><a href="">${project.tech[2]}</a></li>
     </ul>
 
-    <button id="project${i+1}" onclick="clickedMobileBtn(this)" class="btn-type-1 box-btn">See Project</button>
+    <button id="project${i + 1}" onclick="clickedMobileBtn(this)" class="btn-type-1 box-btn">See Project</button>
   </div>`;
   });
   return cards;
