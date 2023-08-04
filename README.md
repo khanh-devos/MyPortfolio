@@ -113,7 +113,7 @@ You can deploy this project using a Host service
 
 - GitHub: [khanh-devos](https://github.com/khanh-devos)
 - Twitter: [@khanhror](https://twitter.com/home?lang=en)
-- LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
+- LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-ror-3b4344246/)
 
 # 👤 Author2
 👤 **Adesina Abiodun Paul**
