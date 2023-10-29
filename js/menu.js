@@ -20,7 +20,7 @@ function mobileProjects() {
       title: 'Nobelists',
       img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
       tech: ['HTML', 'React', 'Redux'],
-      description: "show a list of Nobelists based on their countries and cities in the world. Testing included",
+      description: 'show a list of Nobelists based on their countries and cities in the world. Testing included',
       url: 'https://khanh-devos.github.io/re-cap-nobel/',
       git: 'https://github.com/khanh-devos/re-cap-nobel',
     },
@@ -28,7 +28,7 @@ function mobileProjects() {
       title: 'Budget management',
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png',
       tech: ['Ruby', 'Rails', 'Stimulus'],
-      description: "you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+      description: 'you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
       url: 'https://snapscan-khanh.onrender.com/',
       git: 'https://github.com/khanh-devos/rails-7-snapscan',
     },
@@ -39,7 +39,7 @@ function mobileProjects() {
       description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
       url: '',
       git: '',
-    }
+    },
   };
 }
 
@@ -65,7 +65,7 @@ function desktopProjects() {
       title: 'Episodes',
       img: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Under_the_Dome_R1_S1_DVD.jpg',
       tech: ['HTML', 'JavaScript', 'Redux'],
-      description: "List of episodes of the UNDER THE DOME, adding Redux implemented for curiosity",
+      description: 'List of episodes of the UNDER THE DOME, adding Redux implemented for curiosity',
       url: 'https://khanh-devos.github.io/Capstone2-Kanban/',
       git: 'https://github.com/khanh-devos/Capstone2-Kanban',
     },

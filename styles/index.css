@@ -87,10 +87,8 @@ body {
   margin-top: 24px;
   padding: 72px 19px;
   padding-bottom: 0;
-
   position: relative;
   height: 420px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,7 +306,6 @@ body {
 }
 
 /* Works */
-
 
 #works-box-container-desktop {
   display: none;
