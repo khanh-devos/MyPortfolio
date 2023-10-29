@@ -116,6 +116,12 @@
 }
 
 /* works into-1 */
+#hand {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
 #works {
   padding: 130px var(--padding);
 }
@@ -141,12 +147,6 @@
   width: 20px;
   height: auto;
   z-index: 2;
-}
-
-#works-box-container-desktop #project0 img {
-  position: absolute;
-  top: 40%;
-  left: 40%;
 }
 
 #popup #popup-content #popup-info > img {
@@ -218,14 +218,12 @@
   gap: 24px;
 }
 
-#works-box-container-desktop .works-box {
-  height: 435px;
-  min-height: 35vh;
-  justify-content: flex-end;
+.works-box {
+  cursor: pointer;
 }
 
-#works-box-container-desktop #project0 {
-  position: relative;
+.works-box-img {
+  object-fit: cover;
 }
 
 /* About me */
