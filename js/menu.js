@@ -17,7 +17,7 @@ function mobileProjects() {
       git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
     project2: {
-      title: 'Nobelists',
+      title: 'Nobelists (JS)',
       img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
       tech: ['HTML', 'React', 'Redux'],
       description: 'show a list of Nobelists based on their countries and cities in the world. Testing included',
@@ -25,6 +25,14 @@ function mobileProjects() {
       git: 'https://github.com/khanh-devos/re-cap-nobel',
     },
     project3: {
+      title: 'Nobelists (TS)',
+      img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
+      tech: ['TypeScript', 'Tailwind', 'Nextjs'],
+      description: "a TypeScript prototype of Nobelists above but built on Nextjs and TypeScript.",
+      url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
+      git: '',
+    },
+    project4: {
       title: 'Budget management',
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png',
       tech: ['Ruby', 'Rails', 'Stimulus'],
@@ -32,14 +40,7 @@ function mobileProjects() {
       url: 'https://snapscan-khanh.onrender.com/',
       git: 'https://github.com/khanh-devos/rails-7-snapscan',
     },
-    project4: {
-      title: 'Profesional Art Printing Data',
-      img: './imgs/works-bg.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
-    },
+    
   };
 }
 
@@ -70,28 +71,28 @@ function desktopProjects() {
       git: 'https://github.com/khanh-devos/Capstone2-Kanban',
     },
     project3: {
-      title: 'Profesional Art Printing Data More',
-      img: './imgs/works-bg.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Book store',
+      img: 'https://i.pinimg.com/736x/9f/4b/9b/9f4b9b13548e042db4f0361978f088dc.jpg',
+      tech: ['React', 'Redux', 'CSS'],
+      description: "a website showing a list of books. Users can add a new book, remove a book. While building, we use Reactjs with React-Redux.",
+      url: 'https://khanh-devos.github.io/rjs-bookstore-khanh/',
+      git: 'https://github.com/khanh-devos/rjs-bookstore-khanh',
     },
     project4: {
-      title: 'Data Dashboard Healthcare',
-      img: './imgs/box-2.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Calculator(JS)',
+      img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
+      tech: ['React', 'JS', 'Jest'],
+      description: "a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.",
+      url: 'https://khanh-devos.github.io/math-magics-k/',
+      git: 'https://github.com/khanh-devos/math-magics-k',
     },
     project5: {
-      title: 'Website Portfolio',
-      img: './imgs/box-3.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Caculator(TS)',
+      img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
+      tech: ['React', 'TypeScript', 'Jest'],
+      description: "A TypeScript prototype of the app 'calculator' besides.",
+      url: 'https://math-magics-reactjs.onrender.com',
+      git: 'https://github.com/khanh-devos/math-magics-k-t',
     },
   };
 }
@@ -118,7 +119,7 @@ function mobileCards() {
       <li><a href="">${project.tech[2]}</a></li>
     </ul>
     
-    <button id="project${i + 1}" onclick="clickedMobileBtn(this)" class="btn-type-1 box-btn">See Project</button>
+    <button id="project${i+1}" onclick="clickedMobileBtn(this)" class="btn-type-1 box-btn">See Project</button>
     </div>
 
     <img src="${project.img}" class="works-box-img" alt="project cover" />
