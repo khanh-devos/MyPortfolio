@@ -40,6 +40,14 @@ function mobileProjects() {
       url: 'https://snapscan-khanh.onrender.com/',
       git: 'https://github.com/khanh-devos/rails-7-snapscan',
     },
+    project5: {
+      title: 'Ebike Test-Ride',
+      img: 'https://i.morioh.com/210415/831bb8a9.webp',
+      tech: ['Reactjs', 'Rails', 'Rest API'],
+      description: 'Tow parts: backend ROR and frontend React for booking a test-ride of your favorite ebike.',
+      url: 'https://khanh-devos.github.io/capstone-ebike-reservation-frontend/',
+      git: 'https://github.com/khanh-devos/capstone-ebike-reservation-backend',
+    },
 
   };
 }
