@@ -63,12 +63,12 @@ function desktopProjects() {
       git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
     project1: {
-      title: 'Space Travel',
-      img: './imgs/projectImgs/earthFromSpace.jpg',
-      tech: ['Reactjs', 'Redux', 'Jest'],
-      description: 'the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board and testing is included.',
-      url: 'https://khanh-devos.github.io/react-redux-group-kanban/',
-      git: 'https://github.com/khanh-devos/react-redux-group-kanban',
+      title: 'Ebike Test-Ride',
+      img: 'https://i.morioh.com/210415/831bb8a9.webp',
+      tech: ['Reactjs', 'Rails', 'Rest API'],
+      description: 'Two parts: backend ROR and frontend React for booking a test-ride of your favorite ebike.',
+      url: 'https://khanh-devos.github.io/capstone-ebike-reservation-frontend/',
+      git: 'https://github.com/khanh-devos/capstone-ebike-reservation-backend',
     },
     project2: {
       title: 'Episodes',
