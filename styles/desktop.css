@@ -214,16 +214,26 @@
 
 #works-box-container-desktop {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 33% 33% 33%;
   gap: 24px;
 }
 
 .works-box {
   cursor: pointer;
+  position: relative;
 }
 
 .works-box-img {
   object-fit: cover;
+}
+
+.desktop-btn {
+  opacity: 0;
+  transition: 1s;
+}
+
+.works-box:hover .desktop-btn {
+  opacity: 1;
 }
 
 /* About me */

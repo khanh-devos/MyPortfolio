@@ -151,6 +151,8 @@ body {
 }
 
 .box-nav li a {
+  display: flex;
+  align-items: center;
   border: none;
   font-family: Inter, fantasy;
   font-size: 15px;
@@ -166,6 +168,7 @@ body {
 .box-btn {
   min-width: calc(100% + 38px);
   margin: 10px 0 0 -19px;
+  cursor: pointer;
 }
 
 /* nav */
