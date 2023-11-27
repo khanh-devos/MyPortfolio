@@ -10,7 +10,7 @@ function mobileProjects() {
     },
     project1: {
       title: 'TO DO List',
-      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg.img.jpeg',
+      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg',
       tech: ['HTML', 'CSS', 'JavaScript'],
       description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
       url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
@@ -56,7 +56,7 @@ function desktopProjects() {
   return {
     project0: {
       title: 'TO DO List',
-      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg.img.jpeg',
+      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg',
       tech: [],
       description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
       url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
@@ -147,9 +147,9 @@ function desktopCards() {
     return `<div class="works-box" 
     id="${item}"
     onclick="clickedDesktopBtn(this)"
+    onmouseover="jump(this)"
+    onmouseleave="stopJumping(this)"
     >
-
-    
 
       <div class="works-box-content"></div>
 
@@ -167,7 +167,8 @@ function desktopCards() {
 
         ${item === 'project0' ? '<img id="hand" width=20 height=20 src="./imgs/socialIcons/Shape.png" alt="cursor">' : ''}
 
-        <button onclick="clickedDesktopBtn(this)" class="btn-type-1 box-btn desktop-btn">See Project</button>
+        <button id="btn-${item}" onclick="clickedDesktopBtn(this)" 
+        class="btn-type-1 box-btn desktop-btn">See Project</button>
         
       </div>
 
@@ -179,6 +180,10 @@ function desktopCards() {
 
   </div> `;
   });
+
+  // Add a fake button "See project"
+  cards.push('<button id="btn-fake">See Project</button>');
+
   return cards;
 }
 

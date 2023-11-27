@@ -215,8 +215,9 @@
 
 #works-box-container-desktop {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 24px;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-between;
+  position: relative;
 }
 
 .works-box {
@@ -230,12 +231,29 @@
 
 /* Modify See project button */
 .desktop-btn {
-  opacity: 0.2;
+  display: none;
 }
 
-.works-box:hover .desktop-btn {
-  transition: 0.7s;
+#btn-fake {
+  height: 48px;
+  padding: 12px 12px;
+  font-family: Inter, fantasy;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff6b00;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: absolute;
+  top: calc(420px - 2.7%);
+  left: 0;
+  z-index: 2;
   opacity: 1;
+  min-width: 32%;
+  rotate: 0deg;
 }
 
 /* About me */
