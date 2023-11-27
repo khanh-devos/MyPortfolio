@@ -146,7 +146,7 @@ function desktopCards() {
 
     return `<div class="works-box" 
     id="${item}"
-    onclick="clickedDesktopBtn(this)"
+    onclick="clickedDesktopBtn('${item}')"
     onmouseover="jump(this)"
     onmouseleave="stopJumping(this)"
     >
@@ -167,7 +167,7 @@ function desktopCards() {
 
         ${item === 'project0' ? '<img id="hand" width=20 height=20 src="./imgs/socialIcons/Shape.png" alt="cursor">' : ''}
 
-        <button id="btn-${item}" onclick="clickedDesktopBtn(this)" 
+        <button id="desk-${item}" onclick="clickedDesktopBtn('${item}')" 
         class="btn-type-1 box-btn desktop-btn">See Project</button>
         
       </div>
@@ -216,12 +216,26 @@ function validateEmail(event) {
   }, 4000);
 }
 
+const checkSliding = (event) => {
+  const x2 = event.clientX;
+  const x = Number(localStorage.getItem('startSliding'));
+  localStorage.setItem('breakSlidingPoint', `${x2 - x}`);
+};
+
+const startSliding = (event) => {
+  const x = event.clientX;
+  localStorage.setItem('startSliding', `${x}`);
+};
+
 window.onload = () => {
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
 
   // validate form
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
+
+  document.querySelector('body').addEventListener('mousedown', startSliding);
+  document.querySelector('body').addEventListener('mouseup', checkSliding);
 };
 
 function toggleHamburgerBtn() {
@@ -300,15 +314,15 @@ function clickedMobileBtn(btn) {
   worksBox.innerHTML = showPopup(matchProject);
 }
 
-function clickedDesktopBtn(btn) {
-  if (!btn) return;
+function clickedDesktopBtn(projectItem) {
+  if (!projectItem) return;
 
   const body = document.querySelector('body');
   body.style.overflow = 'hidden';
 
   // popup
   const projects = desktopProjects();
-  const matchProject = projects[btn.id];
+  const matchProject = projects[projectItem];
   const worksBox = document.querySelector('#popup-window');
   worksBox.innerHTML = showPopup(matchProject);
 }

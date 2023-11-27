@@ -1,11 +1,11 @@
 const delay = (time) => new Promise((res) => setTimeout(res, time));
 
 const stopJumping = (workBox) => {
-  localStorage.setItem('itemJumping', workBox.id);
+  if (workBox) localStorage.setItem('itemJumping', workBox.id);
 };
 
 // Draw the line fuction
-const jumping = async (workBox, topRoad, leftRoad, angleRoad) => {
+const jumping = async (hoverBtn, workBox, topRoad, leftRoad, angleRoad) => {
   const parent = document.querySelector('#works-box-container-desktop');
   const jumpBtn = document.getElementById('btn-fake');
   jumpBtn.style.display = 'block';
@@ -19,7 +19,7 @@ const jumping = async (workBox, topRoad, leftRoad, angleRoad) => {
     const [prevTop, prevLeft, prevAngle, prevScale] = localStorage.getItem('prevTopLeft').split('#');
     iniLeft = Number(prevLeft);
     iniTop = Number(prevTop);
-    iniAngle = Number(prevAngle) >= angleRoad * 0.95 ? 0 : Number(prevAngle);
+    iniAngle = Number(prevAngle);
     iniScale = Number(prevScale) > 1 ? 1 : Number(prevScale);
   }
 
@@ -61,19 +61,21 @@ const jumping = async (workBox, topRoad, leftRoad, angleRoad) => {
 
     jumpBtn.style.left = `${currentLeft}%`;
     jumpBtn.style.top = `${currentTop}px`;
-    jumpBtn.style.rotate = `${currentAngle * (-1)}deg`;
+
+    const realAngle = currentAngle > (angleRoad - 10) ? 0 : currentAngle;
+    jumpBtn.style.rotate = `${realAngle * (-1)}deg`;
+
     const realScale = currentScale < maxScale ? currentScale : maxScale - (currentScale - maxScale);
     jumpBtn.style.scale = realScale;
     // console.log(currentScale, " - ", realScale);
 
     localStorage.setItem('prevTopLeft',
-      `${currentTop}#${currentLeft}#${currentAngle}#${realScale}`);
+      `${currentTop}#${currentLeft}#${realAngle}#${realScale}`);
     /* eslint-disable */
     await delay(timeStep);
     /* eslint-enable */
   }
 
-  const hoverBtn = document.querySelector(`#btn-${workBox.id}`);
   if (finishJump) {
     const btns = document.getElementsByClassName('desktop-btn');
     Object.values(btns).forEach((btn) => { btn.style.display = 'none'; });
@@ -88,15 +90,18 @@ const jump = (workBox) => {
   // top: calc(420px*2);
   // left: calc(64% + 4%);
   // store the hovered workbox.
+  if (!workBox) return;
   localStorage.setItem('itemJumping', workBox.id);
 
   // hide all the workbox buttons while jumping
   const btns = document.getElementsByClassName('desktop-btn');
+  const index = Number(workBox.id[workBox.id.length - 1]);
+  const hoverBtn = document.querySelector(`#desk-${workBox.id}`);
+  // console.log(hoverBtn);
+
+  // reset buttons display
   Object.values(btns).forEach((btn) => { btn.style.display = 'none'; });
 
-  const hoverBtn = document.querySelector(`#btn-${workBox.id}`);
-
-  const index = Number(hoverBtn.id[hoverBtn.id.length - 1]);
   const num = index <= 2 ? 1 : 2;
 
   const topRoad = 420 * num - 24 * (2 - num);
@@ -107,7 +112,7 @@ const jump = (workBox) => {
   // if move mouse out of the boxex, 2 cases
   // case1: mouse over another workbox => stop, then move the another workbox
   // case2: mouse not over any workbox => keep moving to the old workbox.
-  jumping(workBox, topRoad, leftRoad, angleRoad, scaleRoad);
+  jumping(hoverBtn, workBox, topRoad, leftRoad, angleRoad, scaleRoad);
 };
 
 stopJumping(null);
