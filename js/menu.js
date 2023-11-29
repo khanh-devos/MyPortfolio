@@ -216,17 +216,6 @@ function validateEmail(event) {
   }, 4000);
 }
 
-const checkSliding = (event) => {
-  const x2 = event.clientX;
-  const x = Number(localStorage.getItem('startSliding'));
-  localStorage.setItem('breakSlidingPoint', `${x2 - x}`);
-};
-
-const startSliding = (event) => {
-  const x = event.clientX;
-  localStorage.setItem('startSliding', `${x}`);
-};
-
 window.onload = () => {
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
@@ -234,8 +223,12 @@ window.onload = () => {
   // validate form
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
 
-  document.querySelector('body').addEventListener('mousedown', startSliding);
-  document.querySelector('body').addEventListener('mouseup', checkSliding);
+  // butterfly
+  /* eslint-disable */
+  document.getElementById('butterfly').addEventListener('click', fly);
+  setButterflyPos();
+  /* eslint-disable */
+
 };
 
 function toggleHamburgerBtn() {

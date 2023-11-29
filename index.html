@@ -23,9 +23,10 @@
     <title>Portfolio</title>
 </head>
 <body>
-
   <header id="header">
-    <a href="">My Logo</a>  
+    <a href="">
+      <img src="./imgs/circle/circle.svg" width="45" height="45" alt="menu btn">
+    </a>  
     
     <button type="button" id="menu-btn" onclick="toggleHamburgerBtn()">
       <img src="./imgs/IconMenu.svg" width="18px" height="12px" alt="menu btn">
@@ -41,7 +42,8 @@
   </header>
 
   <main id="main">
-    <section id="headline">
+    <div id="sect-1">
+      <section id="headline">
       <!-- For menu button -->
       <ul id="mobile-menu">
         <li><a href="#headline" onclick="toggleHamburgerBtn()">Top</a></li><hr>
@@ -51,10 +53,22 @@
       </ul>
 
       <div>
-      <h1>Hey there.<br> I am Khanh.</h1>
-      <h2>I am a remote Full Stack Software Developer</h2>
-      <p>I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don’t hesitate to contact me.</p>
+        <div id="butterfly" class="butterfly-container">
+          <img src="./imgs/butterfly/left_wing.png" id="left-wing1"
+            width="100" height="100" alt="butterfly left_wing ">
+          <img src="./imgs/butterfly/body.png" id="body1"
+            width="10" height="100" alt="butterfly body">
+          <img src="./imgs/butterfly/right_wing.png" id="right-wing1"
+            width="100" height="100" alt="butterfly right_wing ">
+        </div>
+
+        <div class="my-name-container">
+          <h1>I am </h1><h1 id="my-name">Khanh.</h1><p id="hide-it">click the butterfly</p>
+        </div>
+        
+        <h2>A remote Full Stack Software Developer.</h2>
+        <p>I can build nearly everything with HTML, CSS, and JS. I also know React, TypeScript, and Rails on Ruby. <a rel="noopener" href="https://github.com/khanh-devos" target="_blank">My GitHub has over 40 projects</a>. If you want a lively web, just email me "dreamproperty.khanh@gmail.com".
+        </p>
 
       </div>
       
@@ -66,9 +80,11 @@
         <li><a rel="noopener" href="mailto:dreamproperty@gmail.com" target="_blank"></a></li>
       </ul>
 
-    </section>
+      </section>
+    </div>
 
-    <section id="works">
+    <div id="sect-2">
+      <section id="works">
       <!-- popup window for each project -->
       <div id="popup-window"></div>
 
@@ -115,12 +131,14 @@
 
 
 
-    </section>
+      </section>
+    </div>
 
-    <section id="about-me">
+    <div id="sect-3">
+      <section id="about-me">
       <div id="resume">
         <h2>About me</h2>
-        <p>Hello I’m a remote full-stack web developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <p>I am from Vietnam, I am looking for a remote job to fulfill my simple life in a small town. My tech stacks are React, Rails on Ruby, and Python if necessary. I am very interested in computer animation. In my opinion, AI will be a useful tool to make a web app become a human.</p>
 
         <button type="button" class="btn-type-1">
           <a class="resume-link" href="https://docs.google.com/document/d/1CR8ElxzM282_SgUW-zgWD7DJJhSqd4wGDB2X2vAw9u4/edit?usp=sharing" >Get Resume</a>
@@ -167,9 +185,11 @@
 
       </ul>  
 
-    </section>
+      </section>
+    </div>
 
-    <section id="contact">
+    <div id="sect-4">
+      <section id="contact">
       
       <form action="https://formspree.io/f/mqkonqbq" method="POST" id="form">
         <h5>I'm always <br>interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
@@ -205,16 +225,14 @@
         <li><a rel="noopener" href="mailto:dreamproperty@gmail.com" target="_blank"></a></li>
       </ul>
 
-    </section>
-
+      </section>
+    </div>
   </main>
 
 </body>
-
-  <!-- <script type="text/javaScript" src="js/sliding.js"></script> -->
+  <script type="text/javaScript" src="js/butterfly.js"></script>
   <script type="text/javaScript" src="js/menu.js"></script>
   <script type="text/javaScript" src="js/jumpAnimate.js"></script>
   
   <script type="text/javaScript" src="js/storage.js"></script>
-
 </html>

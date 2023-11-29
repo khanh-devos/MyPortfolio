@@ -216,6 +216,43 @@ body {
 }
 
 /* ID part, header */
+.my-name-container {
+  display: flex;
+  gap: 10px;
+}
+
+#hide-it {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  display: none;
+}
+
+.my-name-container:hover #hide-it {
+  display: block;
+  color: #ff6b00;
+  font-style: italic;
+}
+
+.butterfly-container {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 5;
+  display: flex;
+  gap: 0;
+}
+
+#left-wing1 {
+  transform: translateX(1px);
+}
+
+#left-wing1,
+#body1,
+#right-wing1 {
+  filter: brightness(110%);
+}
+
 #header {
   background-color: #3c3a39;
   display: flex;
@@ -286,11 +323,13 @@ body {
   position: relative;
   padding: 120px 24px;
   background: #1c1a19 url(../imgs/headline-bgImg.jpg) no-repeat;
+
+  /* background-color: rgb(255, 206, 114); */
   background-size: 50% 50%;
   background-position: top right;
   background-position-x: 148%;
   background-position-y: 320px;
-  height: 590px;
+  min-height: 90vh;
 }
 
 #headline h1 {
