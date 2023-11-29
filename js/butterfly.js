@@ -41,7 +41,7 @@ const flapping = (state) => {
 };
 
 const iniShowButterfly = () => {
-  document.getElementById('butterfly').style.opacity = 1;
+  document.getElementById('butterfly').style.visibility = 'visible';
 };
 
 const setButterflyPos = () => {

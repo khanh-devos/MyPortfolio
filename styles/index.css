@@ -235,7 +235,7 @@ body {
 }
 
 .butterfly-container {
-  opacity: 0;
+  visibility: 'hidden';
   position: absolute;
   top: 20%;
   left: 20%;
