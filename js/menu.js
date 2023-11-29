@@ -112,7 +112,7 @@ function mobileCards() {
   const cards = Object.keys(projects).map((item, i) => {
     const project = projects[item];
 
-    return `<div class="works-box">
+    return `<div class="works-box ${i % 2 === 0 ? 'ruby-left' : 'ruby-right'}">
 
     <div class="works-box-content"></div>
     
@@ -121,7 +121,7 @@ function mobileCards() {
       
     
     <div>
-    <ul class="nav-buttons box-nav">
+    <ul class="nav-buttons box-nav ruby-top">
       <li><a href="">${project.tech[0]}</a></li>
       <li><a href="">${project.tech[1]}</a></li>
       <li><a href="">${project.tech[2]}</a></li>
@@ -141,10 +141,11 @@ function mobileCards() {
 function desktopCards() {
   const projects = desktopProjects();
 
-  const cards = Object.keys(projects).map((item) => {
+  const cards = Object.keys(projects).map((item, i) => {
     const project = projects[item];
 
-    return `<div class="works-box" 
+    return `<div 
+    class="works-box ${i % 2 === 0 ? 'ruby-right' : 'ruby-top'}" 
     id="${item}"
     onclick="clickedDesktopBtn('${item}')"
     onmouseover="jump(this)"
@@ -159,7 +160,7 @@ function desktopCards() {
 
 
       <div>
-        <ul class="nav-buttons box-nav">
+        <ul class="nav-buttons box-nav ruby-top">
           ${project.tech[0] === undefined ? '' : `<li><a href="">${project.tech[0]}</a></li>`}
           ${project.tech[1] === undefined ? '' : `<li><a href="">${project.tech[1]}</a></li>`}
           ${project.tech[2] === undefined ? '' : `<li><a href="">${project.tech[2]}</a></li>`}
@@ -223,13 +224,20 @@ window.onload = () => {
   // validate form
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
 
-  // butterfly
   /* eslint-disable */
+  // butterfly
   document.getElementById('butterfly').addEventListener('click', fly);
   setButterflyPos();
+  setTimeout(endFlapping, 2000); //let butterfly flapping a little.
+
+  // ruby animate
+  setTimeout(iniRubyAnimate, 500);
+
+  this.addEventListener('scroll', checkRubyAnimate); //add event for window
   /* eslint-disable */
 
 };
+
 
 function toggleHamburgerBtn() {
   const mobileMenu = document.querySelector('#mobile-menu');

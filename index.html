@@ -25,14 +25,16 @@
 <body>
   <header id="header">
     <a href="">
-      <img src="./imgs/circle/circle.svg" width="45" height="45" alt="menu btn">
+      <img class="ruby-animate-top" 
+      src="./imgs/circle/circle.svg" width="45" height="45" alt="menu btn">
     </a>  
     
-    <button type="button" id="menu-btn" onclick="toggleHamburgerBtn()">
+    <button class="ruby-animate-top" type="button" id="menu-btn" 
+      onclick="toggleHamburgerBtn()">
       <img src="./imgs/IconMenu.svg" width="18px" height="12px" alt="menu btn">
     </button>
 
-    <ul id="header-nav">
+    <ul id="header-nav" class="ruby-animate-top">
       <li><a href="#works">Projects</a></li>
       <li><a href="#about-me">About</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -53,7 +55,7 @@
       </ul>
 
       <div>
-        <div id="butterfly" class="butterfly-container">
+        <div id="butterfly" class="butterfly-container ruby-animate-top">
           <img src="./imgs/butterfly/left_wing.png" id="left-wing1"
             width="100" height="100" alt="butterfly left_wing ">
           <img src="./imgs/butterfly/body.png" id="body1"
@@ -66,13 +68,13 @@
           <h1>I am </h1><h1 id="my-name">Khanh.</h1><p id="hide-it">click the butterfly</p>
         </div>
         
-        <h2>A remote Full Stack Software Developer.</h2>
-        <p>I can build nearly everything with HTML, CSS, and JS. I also know React, TypeScript, and Rails on Ruby. <a rel="noopener" href="https://github.com/khanh-devos" target="_blank">My GitHub has over 40 projects</a>. If you want a lively web, just email me "dreamproperty.khanh@gmail.com".
+        <h2 class="ruby-animate-right">A remote Full Stack Software Developer.</h2>
+        <p class="ruby-animate-right">I can build nearly everything with HTML, CSS, and JS. I also know React, TypeScript, and Rails on Ruby. <a rel="noopener" href="https://github.com/khanh-devos" target="_blank">My GitHub has over 40 projects</a>. If you want a lively web, just email me "dreamproperty.khanh@gmail.com".
         </p>
 
       </div>
       
-      <ul class="social-media">
+      <ul class="social-media ruby-animate-left">
         <li><a rel="noopener" href="https://github.com/khanh-devos" target="_blank"></a></li>
         <li><a rel="noopener" href="https://www.linkedin.com/in/khanh-dom/" target="_blank"></a></li>
         <li><a href=""></a></li>
@@ -91,19 +93,19 @@
       <div id="works-intro">
         
         <div id="intro-1">
-          <h3>My Recent Works</h3>
-          <div id="line"></div>
+          <h3 class="ruby-left">My Recent Works</h3>
+          <div id="line" class="ruby-right"></div>
         </div>
 
         <div id="intro-2">
           <img id="img_proj0" src="./imgs/projectImgs/capstone1.jpg" 
-          alt="My recent works" />
+          alt="My recent works" class="ruby-left" />
 
-          <div id="next-img">
+          <div id="next-img" class="ruby-right">
             <h2>Electric Battery Conference</h2>
             <p>A website to launch a new event named 'Electric Battery', having 2 pages Home and About, showing the event place and time. Mobile view and desktop view implemented..</p>
 
-            <ul class="nav-buttons">
+            <ul class="nav-buttons ruby-top">
               <li><a href="">CSS</a></li>
               <li><a href="">HTML</a></li>
               <li><a href="">Bootstrap</a></li>
@@ -137,10 +139,10 @@
     <div id="sect-3">
       <section id="about-me">
       <div id="resume">
-        <h2>About me</h2>
-        <p>I am from Vietnam, I am looking for a remote job to fulfill my simple life in a small town. My tech stacks are React, Rails on Ruby, and Python if necessary. I am very interested in computer animation. In my opinion, AI will be a useful tool to make a web app become a human.</p>
+        <h2 class="ruby-top">About me</h2>
+        <p class="ruby-left">I am from Vietnam, I am looking for a remote job to fulfill my simple life in a small town. My tech stacks are React, Rails on Ruby, and Python if necessary. I am very interested in computer animation. In my opinion, AI will be a useful tool to make a web app become a human.</p>
 
-        <button type="button" class="btn-type-1">
+        <button type="button" class="btn-type-1 ruby-right">
           <a class="resume-link" href="https://docs.google.com/document/d/1CR8ElxzM282_SgUW-zgWD7DJJhSqd4wGDB2X2vAw9u4/edit?usp=sharing" >Get Resume</a>
         </button>
         <div id="line-about"></div>
@@ -148,7 +150,7 @@
       </div>
       
       <ul id="lang-skills">
-        <li id="lang">Language
+        <li id="lang" class="ruby-right">Language
           <ul class="l-f-skills" >
 
             <li>JavaScript</li>
@@ -161,7 +163,7 @@
           </ul>
         </li>
 
-        <li id="frame">Frameworks
+        <li id="frame" class="ruby-top">Frameworks
           <ul class="l-f-skills">
             <li>React.js</li>
             <li>Ruby on Rails</li>
@@ -172,7 +174,7 @@
           </ul>
         </li>
 
-        <li id="skill" >Skills
+        <li id="skill" class="ruby-left">Skills
           <ul class="l-f-skills" >
             <li >Database Management</li>
             <li >Verson Control</li>
@@ -191,24 +193,25 @@
     <div id="sect-4">
       <section id="contact">
       
-      <form action="https://formspree.io/f/mqkonqbq" method="POST" id="form">
-        <h5>I'm always <br>interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
+      <form action="https://formspree.io/f/mqkonqbq" method="POST" 
+      id="form">
+        <h5 class="ruby-right">I'm always <br>interested in hearing about new projects, please get in touch.</h5>
 
         <ul id="form-ul">
-          <li id="li-full-name">
+          <li id="li-full-name" class="ruby-left">
             <input placeholder="Fullname" name="fullname" 
             type="text" maxlength="30" required>
           </li>
 
-          <li id="li-email">
+          <li id="li-email" class="ruby-right">
             <input placeholder="Email address" name="email"
             type="email" required>
           </li>
-          <li id="li-text">
+          <li id="li-text" class="ruby-left">
             <textarea placeholder="Write me something..." 
             name="message" id="" cols="30" rows="5" maxlength="500" required></textarea>
           </li>
-          <li id="li-btn">
+          <li id="li-btn" class="ruby-top">
             <input type="submit"
             class="btn-type-1" value="Get in touch">
           </li>
@@ -230,6 +233,7 @@
   </main>
 
 </body>
+  <script type="text/javaScript" src="js/aRubyAnimate.js"></script>
   <script type="text/javaScript" src="js/butterfly.js"></script>
   <script type="text/javaScript" src="js/menu.js"></script>
   <script type="text/javaScript" src="js/jumpAnimate.js"></script>

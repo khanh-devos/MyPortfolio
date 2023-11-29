@@ -40,6 +40,14 @@ const flapping = (state) => {
   }
 };
 
+const setButterflyPos = () => {
+  const butterfly = document.getElementById('butterfly');
+  const iniPos = document.getElementById('my-name');
+  localStorage.setItem('butterflyPos', `${iniPos.offsetTop - 15}#${iniPos.offsetLeft - 20}`);
+  butterfly.style.top = `${iniPos.offsetTop - 15}px`;
+  butterfly.style.left = `${iniPos.offsetLeft - 20}px`;
+};
+
 const endFlapping = async () => {
   const states = ['wide', 'hard', 'upward', 'wide', 'hard', 'upward'];
 
@@ -53,6 +61,7 @@ const endFlapping = async () => {
   }
 
   flapping('wide');
+  setButterflyPos(); //reset the butterfly position;
 };
 
 const getNextPos = () => {
@@ -66,14 +75,6 @@ const getNextPos = () => {
 
   // console.log(iniTop, nextTop);
   return [nextTop, nextLeft];
-};
-
-const setButterflyPos = () => {
-  const butterfly = document.getElementById('butterfly');
-  const iniPos = document.getElementById('my-name');
-  localStorage.setItem('butterflyPos', `${iniPos.offsetTop - 15}#${iniPos.offsetLeft - 20}`);
-  butterfly.style.top = `${iniPos.offsetTop - 15}px`;
-  butterfly.style.left = `${iniPos.offsetLeft - 20}px`;
 };
 
 const fly = async () => {
@@ -115,7 +116,7 @@ const fly = async () => {
         butterfly.style.left = `${currentLeft}px`;
 
         // start flying
-        butterfly.style.scale = 1.2;
+        butterfly.style.scale = 1.1;
       }
       if (cycle === 2) {
         flapping('wide');

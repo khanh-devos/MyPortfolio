@@ -719,3 +719,22 @@ body {
 #contact-social-media li:nth-child(5) {
   background: url(../imgs/socialIcons/M-2.png) center center no-repeat;
 }
+
+/* ruby-animate */
+.ruby-animate-top,
+.ruby-top {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.ruby-animate-left,
+.ruby-left {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.ruby-animate-right,
+.ruby-right {
+  opacity: 0;
+  transform: translateX(20px);
+}
