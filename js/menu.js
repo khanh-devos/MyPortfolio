@@ -221,6 +221,7 @@ window.onload = () => {
   /* eslint-disable */
   // butterfly
   setButterflyPos();
+  iniShowButterfly();
   document.getElementById('butterfly').addEventListener('click', fly);
   setTimeout(endFlapping, 2000); //let butterfly flapping a little.
   

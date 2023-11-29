@@ -40,6 +40,10 @@ const flapping = (state) => {
   }
 };
 
+const iniShowButterfly = () => {
+  document.getElementById('butterfly').style.opacity = 1;
+};
+
 const setButterflyPos = () => {
   const butterfly = document.getElementById('butterfly');
   const iniPos = document.getElementById('my-name');
@@ -142,3 +146,5 @@ const fly = async () => {
   butterfly.style.scale = 1;
   butterfly.addEventListener('click', fly);
 };
+
+iniShowButterfly();
