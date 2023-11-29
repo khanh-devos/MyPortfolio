@@ -47,6 +47,8 @@ const setButterflyPos = () => {
   butterfly.style.top = `${iniPos.offsetTop - 15}px`;
   butterfly.style.left = `${iniPos.offsetLeft - 20}px`;
 
+  // show name and butterfly;
+  document.getElementsByClassName('my-name-container')[0].style.opacity = 1;
   butterfly.style.opacity = 1;
 };
 
