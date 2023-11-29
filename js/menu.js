@@ -218,18 +218,16 @@ function validateEmail(event) {
 }
 
 window.onload = () => {
-  
-  
+  /* eslint-disable */
   document.getElementById('butterfly').addEventListener('click', fly);
-  setTimeout(endFlapping, 2000); //let butterfly flapping a little.
-  
+  setTimeout(endFlapping, 2000); // let butterfly flapping a little.
+
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
 
   // validate form
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
 
-  /* eslint-disable */
   // butterfly
   setButterflyPos();
 
