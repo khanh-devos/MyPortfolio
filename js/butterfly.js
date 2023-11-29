@@ -40,16 +40,14 @@ const flapping = (state) => {
   }
 };
 
-const iniShowButterfly = () => {
-  document.getElementById('butterfly').style.visibility = 'visible';
-};
-
 const setButterflyPos = () => {
   const butterfly = document.getElementById('butterfly');
   const iniPos = document.getElementById('my-name');
   localStorage.setItem('butterflyPos', `${iniPos.offsetTop - 15}#${iniPos.offsetLeft - 20}`);
   butterfly.style.top = `${iniPos.offsetTop - 15}px`;
   butterfly.style.left = `${iniPos.offsetLeft - 20}px`;
+
+  butterfly.style.opacity = 1;
 };
 
 const endFlapping = async () => {
@@ -146,5 +144,3 @@ const fly = async () => {
   butterfly.style.scale = 1;
   butterfly.addEventListener('click', fly);
 };
-
-iniShowButterfly();

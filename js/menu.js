@@ -218,10 +218,8 @@ function validateEmail(event) {
 }
 
 window.onload = () => {
-  /* eslint-disable */
-  // butterfly
-  setButterflyPos();
-  iniShowButterfly();
+  
+  
   document.getElementById('butterfly').addEventListener('click', fly);
   setTimeout(endFlapping, 2000); //let butterfly flapping a little.
   
@@ -231,7 +229,9 @@ window.onload = () => {
   // validate form
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
 
-  
+  /* eslint-disable */
+  // butterfly
+  setButterflyPos();
 
   // ruby animate
   setTimeout(iniRubyAnimate, 500);
