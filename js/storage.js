@@ -28,4 +28,6 @@ window.addEventListener('load', () => {
 
   // reinput latest values to form from sessionStorage
   handleRefresh();
+
+  // Check butterfly to make sure the page finishing loading
 });

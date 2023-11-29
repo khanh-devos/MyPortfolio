@@ -232,9 +232,12 @@ window.onload = () => {
   setButterflyPos();
 
   // ruby animate
-  setTimeout(iniRubyAnimate, 500);
-
-  this.addEventListener('scroll', checkRubyAnimate); //add event for window
+  if (document.readyState === 'complete') {
+    iniRubyAnimate();
+    this.addEventListener('scroll', checkRubyAnimate);
+  }
+  
+  //add event for window
   /* eslint-disable */
 
 };

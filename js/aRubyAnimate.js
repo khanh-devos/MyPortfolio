@@ -37,5 +37,7 @@ const checkRubyAnimate = () => {
   classNames.forEach((name) => showRubyAnimate(name));
 };
 
-iniRubyAnimate();
-checkRubyAnimate(null);
+if (document.readyState === 'complete') {
+  iniRubyAnimate();
+  checkRubyAnimate(null);
+}
