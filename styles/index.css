@@ -283,7 +283,7 @@ body {
 
 #menu-btn {
   background: rgb(60, 58, 57, 0.5);
-  padding: 2px 5px;
+  padding: 5px 8px;
   border-radius: 5px;
   opacity: 0.7;
   border: none;
@@ -292,6 +292,11 @@ body {
   top: 13px;
   right: 13px;
   z-index: 3;
+}
+
+#menu-btn:hover {
+  background: rgb(60, 58, 57, 1);
+  opacity: 1;
 }
 
 #mobile-menu {

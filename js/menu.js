@@ -235,8 +235,8 @@ window.onload = () => {
   if (document.readyState === 'complete') {
     iniRubyAnimate();
     this.addEventListener('scroll', checkRubyAnimate);
-  }
-  
+  };
+
   //add event for window
   /* eslint-disable */
 

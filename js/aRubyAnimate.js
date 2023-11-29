@@ -32,9 +32,28 @@ const iniRubyAnimate = () => {
   classNames.forEach((name) => showRubyAnimate(name));
 };
 
+const blurHeader = () => {
+  const winScrollPos = Math.round(window.scrollY);
+  const header = document.getElementById('header');
+
+  if (winScrollPos > 50) {
+    if (window.innerWidth > 768) header.style.opacity = 0.5;
+  } else {
+    header.style.opacity = 1;
+  }
+
+  const darkenHeader = () => {
+    header.style.opacity = 1;
+  };
+
+  header.addEventListener('mouseover', darkenHeader);
+};
+
 const checkRubyAnimate = () => {
   const classNames = ['ruby-animate-top', 'ruby-animate-left', 'ruby-animate-right', 'ruby-left', 'ruby-right', 'ruby-top'];
   classNames.forEach((name) => showRubyAnimate(name));
+
+  blurHeader();
 };
 
 if (document.readyState === 'complete') {
