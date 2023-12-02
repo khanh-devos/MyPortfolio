@@ -9,14 +9,6 @@ function mobileProjects() {
       git: 'https://github.com/khanh-devos/Capstone1-conference',
     },
     project1: {
-      title: 'TO DO List',
-      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
-      url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
-      git: 'https://github.com/khanh-devos/TO-DO-LIST',
-    },
-    project2: {
       title: 'Nobelists (JS)',
       img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
       tech: ['HTML', 'React', 'Redux'],
@@ -24,7 +16,7 @@ function mobileProjects() {
       url: 'https://khanh-devos.github.io/re-cap-nobel/',
       git: 'https://github.com/khanh-devos/re-cap-nobel',
     },
-    project3: {
+    project2: {
       title: 'Nobelists (TS)',
       img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
       tech: ['TypeScript', 'Tailwind', 'Nextjs'],
@@ -32,16 +24,16 @@ function mobileProjects() {
       url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
       git: '',
     },
-    project4: {
-      title: 'Budget management',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png',
-      tech: ['Ruby', 'Rails', 'Stimulus'],
-      description: 'You can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-      url: 'https://snapscan-khanh.onrender.com/',
-      git: 'https://github.com/khanh-devos/rails-7-snapscan',
+    project3: {
+      title: 'Caculator (TS)',
+      img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
+      tech: ['React', 'TypeScript', 'Jest'],
+      description: "A TypeScript prototype of the app 'calculator' besides.",
+      url: 'https://math-magics-react-ts.onrender.com/',
+      git: 'https://github.com/khanh-devos/math-magics-k-t',
     },
-    project5: {
-      title: 'Ebike Test-Ride',
+    project4: {
+      title: 'E-bike Test (API)',
       img: 'https://i.morioh.com/210415/831bb8a9.webp',
       tech: ['Reactjs', 'Rails', 'Rest API'],
       description: 'Two parts: backend ROR and frontend React for booking a test-ride of your favorite ebike.',
@@ -87,19 +79,19 @@ function desktopProjects() {
       git: 'https://github.com/khanh-devos/rjs-bookstore-khanh',
     },
     project4: {
-      title: 'Calculator(JS)',
-      img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
-      tech: ['React', 'JS', 'Jest'],
-      description: 'A website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
-      url: 'https://khanh-devos.github.io/math-magics-k/',
-      git: 'https://github.com/khanh-devos/math-magics-k',
+      title: 'Nobelists (TS)',
+      img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
+      tech: ['TypeScript', 'Tailwind', 'Nextjs'],
+      description: 'A TypeScript prototype of Nobelists above but built on Nextjs and TypeScript.',
+      url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
+      git: '',
     },
     project5: {
-      title: 'Caculator(TS)',
+      title: 'Caculator (TS)',
       img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
       tech: ['React', 'TypeScript', 'Jest'],
       description: "A TypeScript prototype of the app 'calculator' besides.",
-      url: 'https://math-magics-reactjs.onrender.com',
+      url: 'https://math-magics-react-ts.onrender.com/',
       git: 'https://github.com/khanh-devos/math-magics-k-t',
     },
   };

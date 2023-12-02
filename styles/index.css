@@ -210,7 +210,7 @@ body {
 }
 
 .social-media li:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(29, 161, 243, 1);
   transform: scale(1.1);
   opacity: 0.8;
 }
@@ -252,7 +252,7 @@ body {
 #left-wing1,
 #body1,
 #right-wing1 {
-  filter: brightness(110%);
+  filter: brightness(140%);
 }
 
 #header {
@@ -348,6 +348,20 @@ body {
   line-height: 64px;
   letter-spacing: 0.3700000048px;
   text-align: left;
+}
+
+.steiner-text {
+  background: url(../imgs/myname/red-orange1.jpg) center/cover;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.steiner-text2 {
+  background: url(../imgs/myname/red-orange.jpg) center/cover;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #headline h2 {

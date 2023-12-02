@@ -23,9 +23,9 @@ const flapping = (state) => {
     rightWing.style.transform = 'rotateY(0deg) translateX(0px)';
     body.style.transform = 'scale(1.13, 1)';
 
-    body.style.filter = 'brightness(110%)';
-    leftWing.style.filter = 'brightness(110%)';
-    rightWing.style.filter = 'brightness(110%)';
+    body.style.filter = 'brightness(140%)';
+    leftWing.style.filter = 'brightness(140%)';
+    rightWing.style.filter = 'brightness(140%)';
   }
 
   if (state === 'upward') {
@@ -43,9 +43,12 @@ const flapping = (state) => {
 const setButterflyPos = () => {
   const butterfly = document.getElementById('butterfly');
   const iniPos = document.getElementById('my-name');
+
   localStorage.setItem('butterflyPos', `${iniPos.offsetTop - 15}#${iniPos.offsetLeft - 20}`);
   butterfly.style.top = `${iniPos.offsetTop - 15}px`;
-  butterfly.style.left = `${iniPos.offsetLeft - 20}px`;
+
+  const denominator = window.innerWidth < 768 ? 2.5 : 1.4;
+  butterfly.style.left = `${iniPos.offsetWidth / denominator}px`;
 
   // show name and butterfly;
   document.getElementsByClassName('my-name-container')[0].style.opacity = 1;
@@ -53,7 +56,7 @@ const setButterflyPos = () => {
 };
 
 const endFlapping = async () => {
-  const states = ['wide', 'hard', 'upward', 'wide', 'hard', 'upward'];
+  const states = ['wide', 'hard', 'upward', 'wide', 'hard', 'upward', 'wide', 'hard'];
 
   while (states.length > 0) {
     const state = states.shift();
@@ -91,7 +94,7 @@ const fly = async () => {
   const [iniTop, iniLeft] = localStorage.getItem('butterflyPos').split('#');
   const [nextTop, nextLeft] = getNextPos();
 
-  const denominator = 20.0;
+  const denominator = 15.0;
 
   const stepTop = (nextTop - iniTop) / denominator;
   let currentTop = Number(iniTop);
@@ -108,16 +111,16 @@ const fly = async () => {
 
     const rand = Math.random() + 1;
     currentTop += stepTop * rand;
-    currentLeft += Math.round(rand * 10) % 2 === 0 ? 5 : -5;
+    currentLeft += Math.round(rand * 10) % 2 === 0 ? 15 : -5;
     await delay(restflap);
 
     let cycle = 1;
     while (cycle < 4) {
-      await delay(fastflap);
 
       if (cycle === 1) {
         flapping('upward');
         butterfly.style.left = `${currentLeft}px`;
+        butterfly.style.transitionDuration = `${fastflap/1000.0}s`
 
         // start flying
         butterfly.style.scale = 1.1;
@@ -128,6 +131,7 @@ const fly = async () => {
       if (cycle === 3) {
         flapping('hard');
         butterfly.style.top = `${currentTop}px`;
+        butterfly.style.transitionDuration = `${fastflap/1000.0}s`
       }
 
       // console.log(cycle);
