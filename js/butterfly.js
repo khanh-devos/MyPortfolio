@@ -69,6 +69,9 @@ const endFlapping = async () => {
 
   flapping('wide');
   setButterflyPos(); //reset the butterfly position;
+
+  const butterfly = document.getElementById('butterfly');
+  butterfly.addEventListener('click', fly);
 };
 
 const getNextPos = () => {
@@ -148,5 +151,4 @@ const fly = async () => {
   endFlapping(restflap);
   // stop flying
   butterfly.style.scale = 1;
-  butterfly.addEventListener('click', fly);
 };

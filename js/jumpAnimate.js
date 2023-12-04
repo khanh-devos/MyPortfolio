@@ -1,3 +1,4 @@
+// JUMP ANIMATE OF BUTTON 'SEE PROJECT'
 const delay = (time) => new Promise((res) => setTimeout(res, time));
 
 const stopJumping = (workBox) => {

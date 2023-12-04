@@ -278,7 +278,7 @@ function showPopup(project) {
       <img id='popup-img' width="100%" src="${project.img}" alt="project-image">
 
       <div id="popup-info-details">
-        <p>${project.description}</p>
+        <p class="popup-item-description">${project.description}</p>
 
         <div id="function-btns">
           <a class="btn-type-1" href="${project.url}" target="_blank">

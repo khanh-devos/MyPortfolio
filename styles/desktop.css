@@ -247,9 +247,7 @@
   line-height: 24px;
   text-align: center;
   color: #fff;
-  background-color: #ff6b00;
-  outline: none;
-  border: 1px solid transparent;
+  background: linear-gradient(to right, #ff6b00, #ff6b00, #ffd500);
   cursor: pointer;
   position: absolute;
   top: calc(420px - 2.7%);
@@ -258,6 +256,8 @@
   opacity: 1;
   min-width: 32%;
   rotate: 0deg;
+  border: none;
+  outline: none;
 }
 
 /* About me */
