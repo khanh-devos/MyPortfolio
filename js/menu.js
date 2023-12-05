@@ -65,8 +65,8 @@ function desktopProjects() {
     project2: {
       title: 'Episodes',
       img: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Under_the_Dome_R1_S1_DVD.jpg',
-      tech: ['HTML', 'JavaScript', 'Redux'],
-      description: 'List of episodes of the UNDER THE DOME, adding Redux implemented for curiosity',
+      tech: ['Webpack', 'JavaScript', 'Redux'],
+      description: 'List of episodes of the UNDER THE DOME, an implementation of JS and Redux for curiosity',
       url: 'https://khanh-devos.github.io/Capstone2-Kanban/',
       git: 'https://github.com/khanh-devos/Capstone2-Kanban',
     },
