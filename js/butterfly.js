@@ -102,7 +102,7 @@ const fly = async () => {
   const stepTop = (nextTop - iniTop) / denominator;
   let currentTop = Number(iniTop);
   let currentLeft = Number(iniLeft);
-  console.log(currentTop, stepTop);
+  // console.log(currentTop, stepTop);
 
   let num = 0;
   const fastflap = 50;
