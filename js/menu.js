@@ -22,7 +22,7 @@ function mobileProjects() {
       tech: ['TypeScript', 'Tailwind', 'Nextjs'],
       description: 'A TypeScript prototype of Nobelists above but built on Nextjs and TypeScript.',
       url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
-      git: '',
+      git: 'https://github.com/khanh-devos/nobel-ts',
     },
     project3: {
       title: 'Caculator (TS)',
@@ -84,7 +84,7 @@ function desktopProjects() {
       tech: ['TypeScript', 'Tailwind', 'Nextjs'],
       description: 'A TypeScript prototype of Nobelists above but built on Nextjs and TypeScript.',
       url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
-      git: '',
+      git: 'https://github.com/khanh-devos/nobel-ts',
     },
     project5: {
       title: 'Caculator (TS)',
@@ -211,8 +211,6 @@ function validateEmail(event) {
 
 window.onload = () => {
   /* eslint-disable */
-  document.getElementById('butterfly').addEventListener('click', fly);
-  setTimeout(endFlapping, 2000); // let butterfly flapping a little.
 
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
@@ -224,9 +222,14 @@ window.onload = () => {
   setButterflyPos();
 
   // ruby animate
+  document.getElementById('butterfly').addEventListener('click', fly);
+  
   if (document.readyState === 'complete') {
     iniRubyAnimate();
     this.addEventListener('scroll', checkRubyAnimate);
+
+    setTimeout(endFlapping, 2000);
+    setInterval(endFlapping, 15000); // let butterfly flapping a little.
   };
 
   //add event for window

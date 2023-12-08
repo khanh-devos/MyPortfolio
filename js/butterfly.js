@@ -56,7 +56,7 @@ const setButterflyPos = () => {
 };
 
 const endFlapping = async () => {
-  const states = ['wide', 'hard', 'upward', 'wide', 'hard', 'upward', 'wide', 'hard'];
+  const states = ['wide', 'upward', 'wide', 'upward', 'wide', 'upward', 'wide'];
 
   while (states.length > 0) {
     const state = states.shift();
