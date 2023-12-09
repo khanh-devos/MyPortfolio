@@ -60,6 +60,10 @@ const endFlapping = async () => {
 
   while (states.length > 0) {
     const state = states.shift();
+
+    const isFlying = localStorage.getItem('isFlying');
+    if (isFlying === 'true') break;
+
     flapping(state);
     /* eslint-disable */
     await delay(500);
@@ -67,8 +71,11 @@ const endFlapping = async () => {
 
   }
 
-  flapping('wide');
-  setButterflyPos(); //reset the butterfly position;
+  const isFlying = localStorage.getItem('isFlying');
+  if (isFlying === 'false') {
+    flapping('wide');
+    setButterflyPos(); //reset the butterfly position;
+  }
 
   const butterfly = document.getElementById('butterfly');
   butterfly.addEventListener('click', fly);
@@ -88,10 +95,12 @@ const getNextPos = () => {
 };
 
 const fly = async () => {
-  console.log('flying');
   const butterfly = document.getElementById('butterfly');
 
   butterfly.removeEventListener('click', fly);
+
+  // stop everything
+  localStorage.setItem('isFlying', 'true');
 
   // next pos;
   const [iniTop, iniLeft] = localStorage.getItem('butterflyPos').split('#');
@@ -126,7 +135,7 @@ const fly = async () => {
         butterfly.style.transitionDuration = `${fastflap/1000.0}s`
 
         // start flying
-        butterfly.style.scale = 1.1;
+        butterfly.style.scale = 1.3;
       }
       if (cycle === 2) {
         flapping('wide');
@@ -146,9 +155,11 @@ const fly = async () => {
     flapping('wide');
   }
   /* eslint-disable */
-
-
-  endFlapping(restflap);
+  
+  // reset everything again
+  localStorage.setItem('isFlying', 'false');
+  
   // stop flying
+  endFlapping(restflap);
   butterfly.style.scale = 1;
 };

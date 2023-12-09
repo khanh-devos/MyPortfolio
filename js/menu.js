@@ -228,8 +228,9 @@ window.onload = () => {
     iniRubyAnimate();
     this.addEventListener('scroll', checkRubyAnimate);
 
+    localStorage.setItem('isFlying', 'false');
     setTimeout(endFlapping, 2000);
-    setInterval(endFlapping, 15000); // let butterfly flapping a little.
+    setInterval(endFlapping, 12000); // let butterfly flapping a little.
   };
 
   //add event for window
