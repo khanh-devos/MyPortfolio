@@ -5,7 +5,7 @@ const flapping = (state) => {
 
   const movement = 100;
   const rotation = 70;
-  const isFlying = localStorage.getItem('isFlying')
+  const isFlying = localStorage.getItem('isFlying');
   const bodyScale = isFlying ? 1.1 : 1;
 
   if (state === 'hard') {
