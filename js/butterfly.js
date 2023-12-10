@@ -5,11 +5,13 @@ const flapping = (state) => {
 
   const movement = 100;
   const rotation = 70;
+  const isFlying = localStorage.getItem('isFlying')
+  const bodyScale = isFlying ? 1.1 : 1;
 
   if (state === 'hard') {
     leftWing.style.transform = `rotateY(${rotation}deg) translateX(${movement}px)`;
     rightWing.style.transform = `rotateY(${rotation}deg) translateX(-${movement}px)`;
-    body.style.transform = 'scale(1.16, 1)';
+    body.style.transform = `scale(${bodyScale + 0.3}, 1)`;
 
     // lighten all wings:
     body.style.filter = 'brightness(100%)';
@@ -21,7 +23,7 @@ const flapping = (state) => {
     // state 2: largest wings
     leftWing.style.transform = 'rotateY(0deg) translateX(1px)';
     rightWing.style.transform = 'rotateY(0deg) translateX(0px)';
-    body.style.transform = 'scale(1.13, 1)';
+    body.style.transform = `scale(${bodyScale + 0.2}, 1)`;
 
     body.style.filter = 'brightness(140%)';
     leftWing.style.filter = 'brightness(140%)';
@@ -31,7 +33,7 @@ const flapping = (state) => {
   if (state === 'upward') {
     leftWing.style.transform = `rotateY(${rotation}deg) translateX(${movement}px)`;
     rightWing.style.transform = `rotateY(${rotation}deg) translateX(-${movement}px)`;
-    body.style.transform = 'scale(1.1, 1)';
+    body.style.transform = `scale(${bodyScale}, 1)`;
 
     // lighten all wings:
     body.style.filter = 'brightness(100%)';
@@ -56,7 +58,8 @@ const setButterflyPos = () => {
 };
 
 const endFlapping = async () => {
-  const states = ['wide', 'upward', 'wide', 'upward', 'wide', 'upward', 'wide'];
+  const butterfly = document.getElementById('butterfly');
+  const states = ['wide', 'upward', 'wide', 'upward', 'wide'];
 
   while (states.length > 0) {
     const state = states.shift();
@@ -73,11 +76,11 @@ const endFlapping = async () => {
 
   const isFlying = localStorage.getItem('isFlying');
   if (isFlying === 'false') {
-    flapping('wide');
+    // flapping('wide');
+    await delay(1000);
     setButterflyPos(); //reset the butterfly position;
   }
 
-  const butterfly = document.getElementById('butterfly');
   butterfly.addEventListener('click', fly);
 };
 
