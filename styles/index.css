@@ -1,3 +1,7 @@
+:root {
+  --textColor: #ff6b00; 
+}
+
 * {
   box-sizing: border-box;
   padding: 0 0;
@@ -178,6 +182,8 @@ body {
 
 /* nav */
 .social-media {
+  position: inherit;
+  z-index: 3;
   display: flex;
   margin: 0 0;
   flex-direction: row;
@@ -229,7 +235,7 @@ body {
 
 #hide-it {
   position: absolute;
-  top: 10%;
+  top: -17%;
   left: 40%;
   display: none;
 }
@@ -269,6 +275,7 @@ body {
   height: 48px;
   padding: 4px 24px;
   min-width: 100%;
+  z-index: 2;
 }
 
 #header a {
@@ -296,7 +303,7 @@ body {
   position: fixed;
   top: 13px;
   right: 13px;
-  z-index: 3;
+  z-index: 10;
 }
 
 #menu-btn:hover {
@@ -306,7 +313,7 @@ body {
 
 #mobile-menu {
   display: none;
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
@@ -353,6 +360,7 @@ body {
   line-height: 64px;
   letter-spacing: 0.3700000048px;
   text-align: left;
+  z-index: 1;
 }
 
 .steiner-text {
@@ -360,6 +368,7 @@ body {
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .steiner-text2 {
@@ -367,6 +376,7 @@ body {
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 #headline h2 {
@@ -779,4 +789,27 @@ body {
 .ruby-right {
   opacity: 0;
   transform: translateX(25px);
+}
+
+#headline-content {
+  z-index: 3;
+  position: inherit;
+}
+
+#cloth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  padding: 0;
+}
+
+#pixi-image {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }

@@ -225,12 +225,16 @@ window.onload = () => {
   document.getElementById('butterfly').addEventListener('click', fly);
   
   if (document.readyState === 'complete') {
+    
     iniRubyAnimate();
     this.addEventListener('scroll', checkRubyAnimate);
-
+    
     localStorage.setItem('isFlying', 'false');
     setTimeout(endFlapping, 2000);
     setInterval(endFlapping, 12000); // let butterfly flapping a little.
+    
+    
+    setTimeout(showClothWave, 100);
   };
 
   //add event for window

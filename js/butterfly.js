@@ -49,7 +49,7 @@ const setButterflyPos = () => {
   localStorage.setItem('butterflyPos', `${iniPos.offsetTop - 15}#${iniPos.offsetLeft - 20}`);
   butterfly.style.top = `${iniPos.offsetTop - 15}px`;
 
-  const denominator = window.innerWidth < 768 ? 2.5 : 1.4;
+  const denominator = window.innerWidth < 768 ? 2.5 : 2.3;
   butterfly.style.left = `${iniPos.offsetWidth / denominator}px`;
 
   // show name and butterfly;
@@ -90,7 +90,7 @@ const getNextPos = () => {
   /* eslint-disable */
 
   const frame = document.querySelector('#headline');
-  const nextTop = frame.clientHeight * 0.75;
+  const nextTop = frame.clientHeight * 0.55;
   const nextLeft = iniLeft;
 
   // console.log(iniTop, nextTop);
