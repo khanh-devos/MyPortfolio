@@ -1,0 +1,55 @@
+<svg height="1000" width="4000" 
+    viewBox="0 0 4000 1000"
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <g id="g123" stroke="#ff6b00" stroke-width="0.5">
+    <line class="line1" x1="4000" y1="0" x2="0" y2="700"/>
+    <line class="line1" x1="4000" y1="20" x2="0" y2="695"/>
+    <line class="line1" x1="4000" y1="40" x2="0" y2="690"/>
+    <line class="line1" x1="4000" y1="60" x2="0" y2="685"/>
+    <line class="line1" x1="4000" y1="80" x2="0" y2="680"/>
+    <line class="line1" x1="4000" y1="100" x2="0" y2="675"/>
+    <line class="line1" x1="4000" y1="120" x2="0" y2="670"/>
+    <line class="line1" x1="4000" y1="140" x2="0" y2="665"/>
+    <line class="line1" x1="4000" y1="160" x2="0" y2="660"/>
+    
+
+    <line class="line1" x1="4000" y1="160" x2="0" y2="655"/>
+    <line class="line1" x1="4000" y1="180" x2="0" y2="650"/>
+    <line class="line1" x1="4000" y1="200" x2="0" y2="645"/>
+    <line class="line1" x1="4000" y1="220" x2="0" y2="640"/>
+    <line class="line1" x1="4000" y1="240" x2="0" y2="635"/>
+    <line class="line1" x1="4000" y1="260" x2="0" y2="630"/>
+    <line class="line1" x1="4000" y1="280" x2="0" y2="625"/>
+    <line class="line1" x1="4000" y1="300" x2="0" y2="620"/>
+    <line class="line1" x1="4000" y1="320" x2="0" y2="615"/>
+
+    <line class="line1" x1="4000" y1="320" x2="0" y2="610"/>
+    <line class="line1" x1="4000" y1="340" x2="0" y2="605"/>
+    <line class="line1" x1="4000" y1="360" x2="0" y2="600"/>
+    <line class="line1" x1="4000" y1="380" x2="0" y2="595"/>
+    <line class="line1" x1="4000" y1="400" x2="0" y2="590"/>
+    <line class="line1" x1="4000" y1="420" x2="0" y2="585"/>
+    <line class="line1" x1="4000" y1="440" x2="0" y2="580"/>
+    <line class="line1" x1="4000" y1="460" x2="0" y2="575"/>
+    <line class="line1" x1="4000" y1="480" x2="0" y2="570"/>
+    <line class="line1" x1="4000" y1="500" x2="0" y2="565"/>
+
+    <line class="line1" x1="4000" y1="520" x2="0" y2="560"/>
+    <line class="line1" x1="4000" y1="540" x2="0" y2="555"/>
+    <line class="line1" x1="4000" y1="560" x2="0" y2="545"/>
+    <line class="line1" x1="4000" y1="580" x2="0" y2="540"/>
+    <line class="line1" x1="4000" y1="600" x2="0" y2="535"/>
+    <line class="line1" x1="4000" y1="620" x2="0" y2="530"/>
+    <line class="line1" x1="4000" y1="640" x2="0" y2="525"/>
+    <line class="line1" x1="4000" y1="660" x2="0" y2="520"/>
+    <line class="line1" x1="4000" y1="680" x2="0" y2="515"/>
+    <line class="line1" x1="4000" y1="700" x2="0" y2="510"/>
+    
+  </g>
+
+  <script>
+    
+
+  </script>
+</svg>

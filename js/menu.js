@@ -211,6 +211,7 @@ function validateEmail(event) {
 
 window.onload = () => {
   /* eslint-disable */
+  document.querySelector('body').addEventListener('wheel', checkZoom);
 
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
