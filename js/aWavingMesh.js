@@ -1,4 +1,6 @@
 const checkZoom = () => {
+  if (window.innerWidth <= 768) return;
+
   const headline = document.getElementById('headline');
   const clothContainer = document.getElementById('cloth');
 
@@ -66,7 +68,7 @@ const showClothWave = (check = 1) => {
   const snakeContainer = new PIXI.Graphics();
   /* eslint-disable */
   
-  snakeContainer.x = -50;
+  snakeContainer.x = -70;
   snakeContainer.y = 600;
 
   snakeContainer.width = headline.offsetWidth;
