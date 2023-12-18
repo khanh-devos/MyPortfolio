@@ -18,9 +18,9 @@ const showRubyAnimate = (className) => {
       item.style.transitionDuration = '0.7s';
       item.style.opacity = 0;
 
-      if (className.includes('top')) item.style.transform = 'translateY(-25px)';
-      if (className.includes('left')) item.style.transform = 'translateX(-25px)';
-      if (className.includes('right')) item.style.transform = 'translateX(25px)';
+      if (className.includes('top')) item.style.transform = 'translateY(-22px)';
+      if (className.includes('left')) item.style.transform = 'translateX(-22px)';
+      if (className.includes('right')) item.style.transform = 'translateX(22px)';
     }
   });
 };
