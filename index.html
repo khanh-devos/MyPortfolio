@@ -10,29 +10,31 @@
     <meta name="description" property="og:description" content="My portfolio describe mainly about my featured projects and proffessional skills.">
     <meta name="author" content="Khanh-Dom">
     
-    <link rel="stylesheet" type="text/css" href="styles/index.css" >
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
     <link media="screen and (min-width: 768px)"
-    rel="stylesheet" type="text/css" href="styles/desktop.css" >
+    rel="stylesheet" type="text/css" href="styles/desktop.css" />
 
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto|Crete Round|Poppins|Inter">
+    href="https://fonts.googleapis.com/css?family=Roboto|Crete Round|Poppins|Inter" />
 
-    
     
 
     <title>Portfolio</title>
 </head>
 <body>
-
   <header id="header">
-    <a href="">My Logo</a>  
+    <a href="">
+      <img class="ruby-animate-top" 
+      src="./imgs/circle/circle.svg" width="45" height="45" alt="menu btn">
+    </a>  
     
-    <button type="button" id="menu-btn" onclick="toggleHamburgerBtn()">
-      <img src="./imgs/IconMenu.svg" width="18px" height="12px" alt="menu btn">
+    <button class="ruby-animate-top" type="button" id="menu-btn" 
+      onclick="toggleHamburgerBtn()">
+      <img class="ruby-animate-top" src="./imgs/IconMenu.svg" width="18px" height="12px" alt="menu btn">
     </button>
 
-    <ul id="header-nav">
-      <li><a href="#works">Portfolio</a></li>
+    <ul id="header-nav" class="ruby-animate-top">
+      <li><a href="#works">Projects</a></li>
       <li><a href="#about-me">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href=""></a></li>
@@ -41,52 +43,69 @@
   </header>
 
   <main id="main">
-    <section id="headline">
+    <div id="sect-1">
+      <section id="headline">
       <!-- For menu button -->
       <ul id="mobile-menu">
-        <li><a href="#works" onclick="toggleHamburgerBtn()">Portfolio</a></li><hr>
+        <li><a href="#headline" onclick="toggleHamburgerBtn()">Top</a></li><hr>
+        <li><a href="#works" onclick="toggleHamburgerBtn()">Projects</a></li><hr>
         <li><a href="#about-me" onclick="toggleHamburgerBtn()">About</a></li><hr>
         <li><a href="#contact" onclick="toggleHamburgerBtn()">Contact</a></li><hr>
       </ul>
 
-      <div>
-      <h1>Hey there.<br> I am Khanh.</h1>
-      <h2>I am a Software Engineer</h2>
-      <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don’t hesitate to contact me.</p>
+      <div id="headline-content">
+        <div id="butterfly" class="butterfly-container">
+          <img src="./imgs/butterfly/left_wing.png" id="left-wing1"
+            width="100" height="100" alt="butterfly left_wing ">
+          <img src="./imgs/butterfly/body.png" id="body1"
+            width="10" height="100" alt="butterfly body">
+          <img src="./imgs/butterfly/right_wing.png" id="right-wing1"
+            width="100" height="100" alt="butterfly right_wing ">
+        </div>
+
+        <div class="my-name-container">
+          <h1 id="my-name" class="steiner-text">I am Khanh.</h1>
+          <p id="hide-it">click the butterfly</p>
+        </div>
+        
+        <h2 class="ruby-animate-right">A remote Full Stack Software Developer.</h2>
+        <p class="ruby-animate-right">I can build nearly everything with React or Nextjs (both JS or TS). I also know Rails on Ruby, (Python if necessary). My GitHub has over <a class="steiner-text" rel="noopener" href="https://github.com/khanh-devos" target="_blank">40 projects</a>. If you want a lively web, just email me <a href="" class="steiner-text">"dreamproperty.khanh@gmail.com"</a>.
+        </p>
 
       </div>
       
-      <ul class="social-media">
-        <li><a href="https://github.com/khanh-devos"></a></li>
-        <li><a href="https://www.linkedin.com/in/khanh-dom/"></a></li>
+      <ul class="social-media ruby-animate-left">
+        <li><a rel="noopener" href="https://github.com/khanh-devos" target="_blank"></a></li>
+        <li><a rel="noopener" href="https://www.linkedin.com/in/khanh-dom/" target="_blank"></a></li>
         <li><a href=""></a></li>
-        <li><a href="https://twitter.com/home?lang=en"></a></li>
-        <li><a href="mailto:dreamproperty@gmail.com"></a></li>
+        <li><a rel="noopener" href="https://twitter.com/home?lang=en" target="_blank"></a></li>
+        <li><a rel="noopener" href="mailto:dreamproperty@gmail.com" target="_blank"></a></li>
       </ul>
 
-    </section>
+      </section>
+    </div>
 
-    <section id="works">
+    <div id="sect-2">
+      <section id="works">
       <!-- popup window for each project -->
       <div id="popup-window"></div>
 
       <div id="works-intro">
         
         <div id="intro-1">
-          <h3>My Recent Works</h3>
-          <div id="line"></div>
+          <h3 class="ruby-left">My Recent Works</h3>
+          <div id="line" class="ruby-right"></div>
         </div>
 
         <div id="intro-2">
           <img id="img_proj0" src="./imgs/projectImgs/capstone1.jpg" 
-          alt="My recent works" />
+          alt="My recent works" class="ruby-left" />
 
-          <div id="next-img">
+          <div id="next-img" class="ruby-right">
             <h2>Electric Battery Conference</h2>
-            <p>a website to launch a new event named 'Electric Battery', having 2 pages Home and About, showing the event place and time. Mobile view and desktop view implemented..</p>
+            <p>A website to launch a new event named 'Electric Battery', having 2 pages Home and About, showing the event place and time. Mobile view and desktop view implemented..</p>
 
-            <ul class="nav-buttons">
+            <ul class="nav-buttons ruby-top">
               <li><a href="">CSS</a></li>
               <li><a href="">HTML</a></li>
               <li><a href="">Bootstrap</a></li>
@@ -114,51 +133,56 @@
 
 
 
-    </section>
+      </section>
+    </div>
 
-    <section id="about-me">
+    <div id="sect-3">
+      <section id="about-me">
       <div id="resume">
-        <h2>About me</h2>
-        <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <h2 class="ruby-top steiner-text">About me</h2>
+        <p class="ruby-left">I am from Vietnam, I am looking for a remote job to fulfill my simple life in a small town. My tech stacks are React, Nextjs, both JS and TS. In my view, AI will be a useful tool to make a web app become a human.</p>
 
-        <button type="button" class="btn-type-1">
-          <a class="resume-link" href="https://docs.google.com/document/d/1CR8ElxzM282_SgUW-zgWD7DJJhSqd4wGDB2X2vAw9u4/edit?usp=sharing" >Get Resume</a>
+        <button type="button" class="btn-type-1 ruby-right">
+          <a rel="noopener" class="resume-link" target="_blank"
+          href="https://docs.google.com/document/d/1CR8ElxzM282_SgUW-zgWD7DJJhSqd4wGDB2X2vAw9u4/edit?usp=sharing" >Get Resume</a>
         </button>
         <div id="line-about"></div>
       
       </div>
       
       <ul id="lang-skills">
-        <li id="lang">Language
+        <li id="lang" class="ruby-right">Language
           <ul class="l-f-skills" >
 
             <li>JavaScript</li>
             <li>Ruby</li>
             <li>HTML</li>
             <li>CSS</li>
-            <li id="li-none">nothing</li>
+            <!-- <li id="li-none">TypeScript</li> -->
+            <li class="ruby-right">TypeScript</li>
+
 
 
           </ul>
         </li>
 
-        <li id="frame">Frameworks
+        <li id="frame" class="ruby-top">Frameworks
           <ul class="l-f-skills">
             <li>React.js</li>
             <li>Ruby on Rails</li>
             <li>RSpec</li>
             <li>Capybara</li>
-            <li id="selenium">Selinium</li>
+            <li id="selenium" class="ruby-right">Nextjs</li>
 
           </ul>
         </li>
 
-        <li id="skill" >Skills
+        <li id="skill" class="ruby-left">Skills
           <ul class="l-f-skills" >
             <li >Database Management</li>
             <li >Verson Control</li>
             <li >CLI</li>
-            <li >API Design</li>
+            <li class="ruby-right">API Design</li>
             <li >Web Development</li>
             
           </ul>
@@ -166,28 +190,31 @@
 
       </ul>  
 
-    </section>
+      </section>
+    </div>
 
-    <section id="contact">
+    <div id="sect-4">
+      <section id="contact">
       
-      <form action="https://formspree.io/f/mqkonqbq" method="POST" id="form">
-        <h5>I'm always <br>interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
+      <form action="https://formspree.io/f/mqkonqbq" method="POST" 
+      id="form">
+        <h5 class="ruby-right">I'm always <br>interested in hearing about new projects, please get in touch.</h5>
 
         <ul id="form-ul">
-          <li id="li-full-name">
+          <li id="li-full-name" class="ruby-left">
             <input placeholder="Fullname" name="fullname" 
             type="text" maxlength="30" required>
           </li>
 
-          <li id="li-email">
+          <li id="li-email" class="ruby-right">
             <input placeholder="Email address" name="email"
             type="email" required>
           </li>
-          <li id="li-text">
+          <li id="li-text" class="ruby-left">
             <textarea placeholder="Write me something..." 
             name="message" id="" cols="30" rows="5" maxlength="500" required></textarea>
           </li>
-          <li id="li-btn">
+          <li id="li-btn" class="ruby-top">
             <input type="submit"
             class="btn-type-1" value="Get in touch">
           </li>
@@ -197,21 +224,27 @@
       </form>
 
       <ul class="social-media" id="contact-social-media">
-        <li><a href="https://github.com/khanh-devos"></a></li>
-        <li><a href="https://www.linkedin.com/in/khanh-dom/"></a></li>
+        <li><a rel="noopener" href="https://github.com/khanh-devos" target="_blank"></a></li>
+        <li><a rel="noopener" href="https://www.linkedin.com/in/khanh-dom/" target="_blank"></a></li>
         <li><a href=""></a></li>
-        <li><a href="https://twitter.com/home?lang=en"></a></li>
-        <li><a href="mailto:dreamproperty@gmail.com"></a></li>
+        <li><a rel="noopener" href="https://twitter.com/home?lang=en" target="_blank"></a></li>
+        <li><a rel="noopener" href="mailto:dreamproperty@gmail.com" target="_blank"></a></li>
       </ul>
 
-    </section>
-
+      </section>
+    </div>
   </main>
 
 </body>
+  <script src="https://pixijs.download/release/pixi.js"></script>
 
+  <script type="text/javaScript" src="js/aWavingMesh.js"></script>
+  
+  <script type="text/javaScript" src="js/aRubyAnimate.js"></script>
+
+  <script type="text/javaScript" src="js/butterfly.js"></script>
   <script type="text/javaScript" src="js/menu.js"></script>
+  <script type="text/javaScript" src="js/jumpingBtn.js"></script>
   
   <script type="text/javaScript" src="js/storage.js"></script>
-
 </html>

@@ -1,0 +1,41 @@
+<svg height="1000" width="4000" 
+    viewBox="0 0 4000 1000"
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff3b00;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#ff3b00;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ff6b00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffd500;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:green;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:green;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+
+  <g id="g123" stroke="url(#grad1)" stroke-width="0.4">
+      <!-- <line id="line1" x1="4000" y1="0" x2="0" y2="700"></line> -->
+
+        
+        
+      <!-- <line id="line1" x1="4000" y1="0" x2="0" y2="700"></line><line id="line1" x1="4000" y1="12" x2="0" y2="706"></line><line id="line1" x1="4000" y1="24" x2="0" y2="711"></line><line id="line1" x1="4000" y1="36" x2="0" y2="716"></line><line id="line1" x1="4000" y1="48" x2="0" y2="721"></line><line id="line1" x1="4000" y1="60" x2="0" y2="725"></line><line id="line1" x1="4000" y1="72" x2="0" y2="729"></line><line id="line1" x1="4000" y1="84" x2="0" y2="732"></line><line id="line1" x1="4000" y1="96" x2="0" y2="735"></line><line id="line1" x1="4000" y1="108" x2="0" y2="738"></line><line id="line1" x1="4000" y1="120" x2="0" y2="740"></line><line id="line1" x1="4000" y1="132" x2="0" y2="742"></line><line id="line1" x1="4000" y1="144" x2="0" y2="743"></line><line id="line1" x1="4000" y1="156" x2="0" y2="744"></line><line id="line1" x1="4000" y1="168" x2="0" y2="745"></line><line id="line1" x1="4000" y1="180" x2="0" y2="745"></line><line id="line1" x1="4000" y1="192" x2="0" y2="745"></line><line id="line1" x1="4000" y1="204" x2="0" y2="744"></line><line id="line1" x1="4000" y1="216" x2="0" y2="743"></line><line id="line1" x1="4000" y1="228" x2="0" y2="742"></line><line id="line1" x1="4000" y1="240" x2="0" y2="740"></line><line id="line1" x1="4000" y1="252" x2="0" y2="738"></line><line id="line1" x1="4000" y1="264" x2="0" y2="735"></line><line id="line1" x1="4000" y1="276" x2="0" y2="732"></line><line id="line1" x1="4000" y1="288" x2="0" y2="729"></line><line id="line1" x1="4000" y1="300" x2="0" y2="725"></line><line id="line1" x1="4000" y1="312" x2="0" y2="721"></line><line id="line1" x1="4000" y1="324" x2="0" y2="716"></line><line id="line1" x1="4000" y1="336" x2="0" y2="711"></line><line id="line1" x1="4000" y1="348" x2="0" y2="706"></line><line id="line1" x1="4000" y1="360" x2="0" y2="700"></line><line id="line1" x1="4000" y1="372" x2="0" y2="694"></line><line id="line1" x1="4000" y1="384" x2="0" y2="687"></line><line id="line1" x1="4000" y1="396" x2="0" y2="680"></line><line id="line1" x1="4000" y1="408" x2="0" y2="673"></line><line id="line1" x1="4000" y1="420" x2="0" y2="665"></line><line id="line1" x1="4000" y1="432" x2="0" y2="657"></line><line id="line1" x1="4000" y1="444" x2="0" y2="648"></line><line id="line1" x1="4000" y1="456" x2="0" y2="639"></line><line id="line1" x1="4000" y1="468" x2="0" y2="630"></line><line id="line1" x1="4000" y1="480" x2="0" y2="620"></line><line id="line1" x1="4000" y1="492" x2="0" y2="610"></line><line id="line1" x1="4000" y1="504" x2="0" y2="599"></line><line id="line1" x1="4000" y1="516" x2="0" y2="588"></line><line id="line1" x1="4000" y1="528" x2="0" y2="577"></line><line id="line1" x1="4000" y1="540" x2="0" y2="565"></line><line id="line1" x1="4000" y1="552" x2="0" y2="553"></line><line id="line1" x1="4000" y1="564" x2="0" y2="540"></line><line id="line1" x1="4000" y1="576" x2="0" y2="527"></line><line id="line1" x1="4000" y1="588" x2="0" y2="514"></line> -->
+    
+
+      
+      <line id="line1" x1="4000" y1="0" x2="10" y2="700"></line>
+        
+        
+
+      <line id="line1" x1="4000" y1="0" x2="10" y2="700"></line><line id="line1" x1="4000" y1="26.333333333333332" x2="10" y2="703"></line><line id="line1" x1="4000" y1="52" x2="10" y2="706"></line><line id="line1" x1="4000" y1="77" x2="10" y2="708"></line><line id="line1" x1="4000" y1="101.33333333333333" x2="10" y2="710"></line><line id="line1" x1="4000" y1="125" x2="10" y2="713"></line><line id="line1" x1="4000" y1="148" x2="10" y2="714"></line><line id="line1" x1="4000" y1="170.33333333333334" x2="10" y2="716"></line><line id="line1" x1="4000" y1="192" x2="10" y2="718"></line><line id="line1" x1="4000" y1="213" x2="10" y2="719"></line><line id="line1" x1="4000" y1="233.33333333333334" x2="10" y2="720"></line><line id="line1" x1="4000" y1="253" x2="10" y2="721"></line><line id="line1" x1="4000" y1="272" x2="10" y2="722"></line><line id="line1" x1="4000" y1="290.3333333333333" x2="10" y2="722"></line><line id="line1" x1="4000" y1="308" x2="10" y2="722"></line><line id="line1" x1="4000" y1="325" x2="10" y2="723"></line><line id="line1" x1="4000" y1="341.3333333333333" x2="10" y2="722"></line><line id="line1" x1="4000" y1="357" x2="10" y2="722"></line><line id="line1" x1="4000" y1="372" x2="10" y2="722"></line><line id="line1" x1="4000" y1="386.3333333333333" x2="10" y2="721"></line><line id="line1" x1="4000" y1="400" x2="10" y2="720"></line><line id="line1" x1="4000" y1="413" x2="10" y2="719"></line><line id="line1" x1="4000" y1="425.3333333333333" x2="10" y2="718"></line><line id="line1" x1="4000" y1="437" x2="10" y2="716"></line><line id="line1" x1="4000" y1="448" x2="10" y2="714"></line><line id="line1" x1="4000" y1="458.3333333333333" x2="10" y2="713"></line><line id="line1" x1="4000" y1="468" x2="10" y2="710"></line><line id="line1" x1="4000" y1="477" x2="10" y2="708"></line><line id="line1" x1="4000" y1="485.3333333333333" x2="10" y2="706"></line><line id="line1" x1="4000" y1="493" x2="10" y2="703"></line><line id="line1" x1="4000" y1="500" x2="10" y2="700"></line><line id="line1" x1="4000" y1="506.3333333333333" x2="10" y2="697"></line><line id="line1" x1="4000" y1="512" x2="10" y2="694"></line><line id="line1" x1="4000" y1="517" x2="10" y2="690"></line><line id="line1" x1="4000" y1="521.3333333333334" x2="10" y2="686"></line><line id="line1" x1="4000" y1="525" x2="10" y2="683"></line><line id="line1" x1="4000" y1="528" x2="10" y2="678"></line><line id="line1" x1="4000" y1="530.3333333333334" x2="10" y2="674"></line><line id="line1" x1="4000" y1="532" x2="10" y2="670"></line><line id="line1" x1="4000" y1="533" x2="10" y2="665"></line><line id="line1" x1="4000" y1="533.3333333333334" x2="10" y2="660"></line><line id="line1" x1="4000" y1="533" x2="10" y2="655"></line><line id="line1" x1="4000" y1="532" x2="10" y2="650"></line><line id="line1" x1="4000" y1="530.3333333333334" x2="10" y2="644"></line><line id="line1" x1="4000" y1="528" x2="10" y2="638"></line><line id="line1" x1="4000" y1="525" x2="10" y2="633"></line><line id="line1" x1="4000" y1="521.3333333333334" x2="10" y2="626"></line><line id="line1" x1="4000" y1="517" x2="10" y2="620"></line><line id="line1" x1="4000" y1="512" x2="10" y2="614"></line><line id="line1" x1="4000" y1="506.3333333333333" x2="10" y2="607"></line>  
+        
+
+        
+        
+    
+  </g>
+
+  <script>
+    
+
+  </script>
+</svg>

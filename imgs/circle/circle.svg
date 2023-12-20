@@ -1,0 +1,34 @@
+<svg width="200" height="200" id="svg" 
+    viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="MyFilter4" filterUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+        
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+        <feOffset in="blur" dx="4" dy="4" result="offsetBlur" />
+        
+        <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.5" specularExponent="20" lighting-color="#fff" result="specOut">
+          <fePointLight x="3000" y="-10000" z="10000" id="light"/>
+        </feSpecularLighting>
+        
+        <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+        <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+        
+        <feMerge>
+          <feMergeNode in="offsetBlur" />
+          <feMergeNode in="litPaint" />
+        </feMerge>
+      
+      </filter>
+    </defs>
+
+    
+    <g filter="url(#MyFilter4)">
+      <ellipse id="cirle" cx="100" cy="110" rx="55" ry="55" stroke="#ff6b00" stroke-width="20" fill="none"/>
+    </g>
+
+    
+
+    Sorry, your browser does not support inline SVG.  
+  </svg>
+
+  

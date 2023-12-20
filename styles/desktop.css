@@ -14,6 +14,10 @@
 
 #header {
   padding: 16px var(--padding);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 /* My logo */
@@ -80,7 +84,8 @@
 
 /* Social media */
 #headline .social-media {
-  position: absolute;
+  z-index: 2;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -214,16 +219,45 @@
 
 #works-box-container-desktop {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 24px;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-between;
+  position: relative;
 }
 
 .works-box {
   cursor: pointer;
+  position: relative;
 }
 
 .works-box-img {
   object-fit: cover;
+}
+
+/* Modify See project button */
+.desktop-btn {
+  display: none;
+}
+
+#btn-fake {
+  height: 48px;
+  padding: 12px 12px;
+  font-family: Inter, fantasy;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, #ff6b00, #ff6b00, #ffd500);
+  cursor: pointer;
+  position: absolute;
+  top: calc(420px - 2.7%);
+  left: 0;
+  z-index: 2;
+  opacity: 1;
+  min-width: 32%;
+  rotate: 0deg;
+  border: none;
+  outline: none;
 }
 
 /* About me */

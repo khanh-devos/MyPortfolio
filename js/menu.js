@@ -4,42 +4,43 @@ function mobileProjects() {
       title: 'Electric Battery Conference',
       img: './imgs/projectImgs/capstone1.jpg',
       tech: ['CSS', 'HTML', 'Bootstrap', 'DOM'],
-      description: "a webapp is to launch a new event named 'Electric Battery' to the audiences, having 2 pages Home and About, showing the event place and time, mobile view and desktop view is designed.",
+      description: "A webapp is to launch a new event named 'Electric Battery' to the audiences, having 2 pages Home and About, showing the event place and time, mobile view and desktop view is designed.",
       url: 'https://khanh-devos.github.io/Capstone1-conference/',
       git: 'https://github.com/khanh-devos/Capstone1-conference',
     },
     project1: {
-      title: 'TO DO List',
-      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg.img.jpeg',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
-      url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
-      git: 'https://github.com/khanh-devos/TO-DO-LIST',
-    },
-    project2: {
-      title: 'Nobelists',
+      title: 'Nobelists (JS)',
       img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
       tech: ['HTML', 'React', 'Redux'],
-      description: "show a list of Nobelists based on their countries and cities in the world. Testing included",
+      description: 'Show a list of Nobelists based on their countries and cities in the world. Testing included',
       url: 'https://khanh-devos.github.io/re-cap-nobel/',
       git: 'https://github.com/khanh-devos/re-cap-nobel',
     },
+    project2: {
+      title: 'Nobelists (TS)',
+      img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
+      tech: ['TypeScript', 'Tailwind', 'Nextjs'],
+      description: 'A TypeScript prototype of Nobelists above but built on Nextjs and TypeScript.',
+      url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
+      git: 'https://github.com/khanh-devos/nobel-ts',
+    },
     project3: {
-      title: 'Budget management',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png',
-      tech: ['Ruby', 'Rails', 'Stimulus'],
-      description: "you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
-      url: 'https://snapscan-khanh.onrender.com/',
-      git: 'https://github.com/khanh-devos/rails-7-snapscan',
+      title: 'Caculator (TS)',
+      img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
+      tech: ['React', 'TypeScript', 'Jest'],
+      description: "A TypeScript prototype of the app 'calculator' besides.",
+      url: 'https://math-magics-react-ts.onrender.com/',
+      git: 'https://github.com/khanh-devos/math-magics-k-t',
     },
     project4: {
-      title: 'Profesional Art Printing Data',
-      img: './imgs/works-bg.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
-    }
+      title: 'E-bike Test (API)',
+      img: 'https://i.morioh.com/210415/831bb8a9.webp',
+      tech: ['Reactjs', 'Rails', 'Rest API'],
+      description: 'Two parts: backend ROR and frontend React for booking a test-ride of your favorite ebike.',
+      url: 'https://khanh-devos.github.io/capstone-ebike-reservation-frontend/',
+      git: 'https://github.com/khanh-devos/capstone-ebike-reservation-backend',
+    },
+
   };
 }
 
@@ -47,51 +48,51 @@ function desktopProjects() {
   return {
     project0: {
       title: 'TO DO List',
-      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg.img.jpeg',
+      img: 'https://www.adobe.com/content/dam/dx-dc/images/landing/discover/uk/pomodoro-technique/AdobeStock_124738800.jpeg',
       tech: [],
       description: 'List of tasks to do, allow checkbox to update a task state completed, add or remove a task, modify task description, drag and drop a task to exchange position with another task.',
       url: 'https://khanh-devos.github.io/TO-DO-LIST/dist/',
       git: 'https://github.com/khanh-devos/TO-DO-LIST',
     },
     project1: {
-      title: 'Space Travel',
-      img: './imgs/projectImgs/earthFromSpace.jpg',
-      tech: ['Reactjs', 'Redux', 'Jest'],
-      description: 'the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board and testing is included.',
-      url: 'https://khanh-devos.github.io/react-redux-group-kanban/',
-      git: 'https://github.com/khanh-devos/react-redux-group-kanban',
+      title: 'Ebike Test-Ride',
+      img: 'https://i.morioh.com/210415/831bb8a9.webp',
+      tech: ['Reactjs', 'Rails', 'Rest API'],
+      description: 'Two parts: backend ROR and frontend React for booking a test-ride of your favorite ebike.',
+      url: 'https://khanh-devos.github.io/capstone-ebike-reservation-frontend/',
+      git: 'https://github.com/khanh-devos/capstone-ebike-reservation-backend',
     },
     project2: {
       title: 'Episodes',
       img: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Under_the_Dome_R1_S1_DVD.jpg',
-      tech: ['HTML', 'JavaScript', 'Redux'],
-      description: "List of episodes of the UNDER THE DOME, adding Redux implemented for curiosity",
+      tech: ['Webpack', 'JavaScript', 'Redux'],
+      description: 'List of episodes of the UNDER THE DOME, an implementation of JS and Redux for curiosity',
       url: 'https://khanh-devos.github.io/Capstone2-Kanban/',
       git: 'https://github.com/khanh-devos/Capstone2-Kanban',
     },
     project3: {
-      title: 'Profesional Art Printing Data More',
-      img: './imgs/works-bg.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Book store',
+      img: 'https://i.pinimg.com/736x/9f/4b/9b/9f4b9b13548e042db4f0361978f088dc.jpg',
+      tech: ['React', 'Redux', 'CSS'],
+      description: 'A website showing a list of books. Users can add a new book, remove a book. While building, we use Reactjs with React-Redux.',
+      url: 'https://khanh-devos.github.io/rjs-bookstore-khanh/',
+      git: 'https://github.com/khanh-devos/rjs-bookstore-khanh',
     },
     project4: {
-      title: 'Data Dashboard Healthcare',
-      img: './imgs/box-2.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Nobelists (TS)',
+      img: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png',
+      tech: ['TypeScript', 'Tailwind', 'Nextjs'],
+      description: 'A TypeScript prototype of Nobelists above but built on Nextjs and TypeScript.',
+      url: 'https://nextjs-oscar-khanh-git-feature-khanh-devos.vercel.app/nobelists_context',
+      git: 'https://github.com/khanh-devos/nobel-ts',
     },
     project5: {
-      title: 'Website Portfolio',
-      img: './imgs/box-3.png',
-      tech: ['HTML', 'Bootstrap', 'Ruby'],
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-      url: '',
-      git: '',
+      title: 'Caculator (TS)',
+      img: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/e8/a2/15e8a24f-6ab4-761a-140d-e88cccafa45a/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
+      tech: ['React', 'TypeScript', 'Jest'],
+      description: "A TypeScript prototype of the app 'calculator' besides.",
+      url: 'https://math-magics-react-ts.onrender.com/',
+      git: 'https://github.com/khanh-devos/math-magics-k-t',
     },
   };
 }
@@ -103,7 +104,7 @@ function mobileCards() {
   const cards = Object.keys(projects).map((item, i) => {
     const project = projects[item];
 
-    return `<div class="works-box">
+    return `<div class="works-box ${i % 2 === 0 ? 'ruby-left' : 'ruby-right'}">
 
     <div class="works-box-content"></div>
     
@@ -112,7 +113,7 @@ function mobileCards() {
       
     
     <div>
-    <ul class="nav-buttons box-nav">
+    <ul class="nav-buttons box-nav ruby-top">
       <li><a href="">${project.tech[0]}</a></li>
       <li><a href="">${project.tech[1]}</a></li>
       <li><a href="">${project.tech[2]}</a></li>
@@ -132,39 +133,50 @@ function mobileCards() {
 function desktopCards() {
   const projects = desktopProjects();
 
-  const cards = Object.keys(projects).map((item) => {
+  const cards = Object.keys(projects).map((item, i) => {
     const project = projects[item];
 
-    return `<div class="works-box" 
+    return `<div 
+    class="works-box ${i % 2 === 0 ? 'ruby-right' : 'ruby-top'}" 
     id="${item}"
-    onclick="clickedDesktopBtn(this)"
+    onclick="clickedDesktopBtn('${item}')"
+    onmouseover="jump(this)"
+    onmouseleave="stopJumping(this)"
     >
 
-    <div class="works-box-content"></div>
+      <div class="works-box-content"></div>
 
 
-    <h2>${item === 'project0' ? '' : `${project.title}`}</h2>
-    <p>${item === 'project0' ? '' : `${project.description}`}</p>
+      <h2>${item === 'project0' ? '' : `${project.title}`}</h2>
+      <p>${item === 'project0' ? '' : `${project.description}`}</p>
 
 
-    <div>
-    <ul class="nav-buttons box-nav">
-      ${project.tech[0] === undefined ? '' : `<li><a href="">${project.tech[0]}</a></li>`}
-      ${project.tech[1] === undefined ? '' : `<li><a href="">${project.tech[1]}</a></li>`}
-      ${project.tech[2] === undefined ? '' : `<li><a href="">${project.tech[2]}</a></li>`}
-    </ul>
+      <div>
+        <ul class="nav-buttons box-nav ruby-top">
+          ${project.tech[0] === undefined ? '' : `<li><a href="">${project.tech[0]}</a></li>`}
+          ${project.tech[1] === undefined ? '' : `<li><a href="">${project.tech[1]}</a></li>`}
+          ${project.tech[2] === undefined ? '' : `<li><a href="">${project.tech[2]}</a></li>`}
+        </ul>
 
-    ${item === 'project0' ? '<img id="hand" width=20 height=20 src="./imgs/socialIcons/Shape.png" alt="cursor">' : ''}
+        ${item === 'project0' ? '<img id="hand" width=20 height=20 src="./imgs/socialIcons/Shape.png" alt="cursor">' : ''}
 
-    ${item === 'project0' ? '<button id="project0" onclick="clickedDesktopBtn(this)" class="btn-type-1 box-btn">See Project</button>' : ''}
+        <button id="desk-${item}" onclick="clickedDesktopBtn('${item}')" 
+        class="btn-type-1 box-btn desktop-btn">See Project</button>
+        
+      </div>
 
-    </div>
+    
+    
 
     <img src="${project.img}" class="works-box-img" alt="project cover" />
 
 
   </div> `;
   });
+
+  // Add a fake button "See project"
+  cards.push('<button id="btn-fake">See Project</button>');
+
   return cards;
 }
 
@@ -198,12 +210,39 @@ function validateEmail(event) {
 }
 
 window.onload = () => {
+  /* eslint-disable */
+  document.querySelector('body').addEventListener('wheel', checkZoom);
+
   document.querySelector('#works-box-container').innerHTML = mobileCards().join('');
   document.querySelector('#works-box-container-desktop').innerHTML = desktopCards().join('');
 
   // validate form
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
+
+  // butterfly
+  setButterflyPos();
+
+  // ruby animate
+  document.getElementById('butterfly').addEventListener('click', fly);
+  
+  if (document.readyState === 'complete') {
+    
+    iniRubyAnimate();
+    this.addEventListener('scroll', checkRubyAnimate);
+    
+    localStorage.setItem('isFlying', 'false');
+    setTimeout(endFlapping, 2000);
+    setInterval(endFlapping, 12000); // let butterfly flapping a little.
+    
+    
+    setTimeout(showClothWave, 100);
+  };
+
+  //add event for window
+  /* eslint-disable */
+
 };
+
 
 function toggleHamburgerBtn() {
   const mobileMenu = document.querySelector('#mobile-menu');
@@ -248,15 +287,15 @@ function showPopup(project) {
       <img id='popup-img' width="100%" src="${project.img}" alt="project-image">
 
       <div id="popup-info-details">
-        <p>${project.description}</p>
+        <p class="popup-item-description">${project.description}</p>
 
         <div id="function-btns">
-          <a class="btn-type-1" href="${project.url}">
+          <a class="btn-type-1" href="${project.url}" target="_blank">
             See Live
             <img width="20" src="./imgs/socialIcons/popupIcon.svg" alt="popupIcon">
           </a>
           
-          <a class="btn-type-1" href="${project.git}">
+          <a class="btn-type-1" href="${project.git}" target="_blank">
             See Source
             <img width="20" src="./imgs/socialIcons/gitIcon.svg" alt="gitIcon">
           </a>
@@ -281,15 +320,15 @@ function clickedMobileBtn(btn) {
   worksBox.innerHTML = showPopup(matchProject);
 }
 
-function clickedDesktopBtn(btn) {
-  if (!btn) return;
+function clickedDesktopBtn(projectItem) {
+  if (!projectItem) return;
 
   const body = document.querySelector('body');
   body.style.overflow = 'hidden';
 
   // popup
   const projects = desktopProjects();
-  const matchProject = projects[btn.id];
+  const matchProject = projects[projectItem];
   const worksBox = document.querySelector('#popup-window');
   worksBox.innerHTML = showPopup(matchProject);
 }

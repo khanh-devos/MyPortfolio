@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
+<h1><b>My Portfolio</b></h1>
 
 # 📗 Table of Contents
 
@@ -26,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [MyPortfolio] <a name="about-project"></a>
+# 📖 About <a name="about-project"></a>
 
-**[MyPortfolio]** is used to introduce my knowledge of HTML, CSS
+**MyPortfolio** is used to introduce my skills of a full stack developer and corresponding projects of mine.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,9 +63,9 @@ This project is based on HTML, CSS, Linters
 
 ### Key Features <a name="key-features"></a>
 
-- **[Responsive]**
-- **[Dynamic]**
-- **[Profession]**
+- **Responsive**
+- **Dynamic**
+- **Profession**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,9 +128,9 @@ You can deploy this project using a Host service
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[this project will get more specific]**
-- [ ] **[continuously updated]**
-- [ ] **[Animation]**
+- [ ] **More projects**
+- [ ] **Continuously updated**
+- [ ] **Animation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +154,7 @@ If you like this project, can invite me a cup of tea
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse or devs who supported me to build this project. 
+I would like to thank any contributors who supported me to build this project. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,11 +162,11 @@ I would like to thank Microverse or devs who supported me to build this project.
 
 - **what are linters for?**
 
-  - [A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipeia](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)).]
+  - A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipeia](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)).
 
 - **Linters can be used for all programming languages ?**
 
-  - [No, not all languages can use linters, [details](https://github.com/microverseinc/linters-config)]
+  - No, not all languages can use linters, [details](https://github.com/microverseinc/linters-config).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
